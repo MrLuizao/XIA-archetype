@@ -1,0 +1,28 @@
+
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side">
+      <h3 class="centered">XIA</h3>
+      <p>Inteligencia Digital</p>
+    </mat-drawer>
+    
+  
+    <div class="example-sidenav-content">
+
+        
+        <mat-toolbar>
+            <button mat-icon-button aria-label="Example icon button with a vertical three dot icon" (click)="drawer.toggle()" class="btn-menu-pos">
+              <mat-icon>more_vert</mat-icon>
+              <!-- <mat-icon>menu_open</mat-icon> -->
+            </button>
+
+            &nbsp;
+            <p>Almacén</p>
+            
+            &nbsp;&nbsp;
+            <mat-icon>store</mat-icon>
+        </mat-toolbar>
+  
+    </div>
+
+</mat-drawer-container>
+  
