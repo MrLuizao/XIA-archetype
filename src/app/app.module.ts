@@ -11,13 +11,19 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 
 import { AppComponent } from './app.component';
 import { MenuBarComponent } from './Components/menu-bar/menu-bar.component';
+import { ProveedorComponent } from './pages/proveedor/proveedor.component';
+import { ComprasComponent } from './pages/compras/compras.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuBarComponent
+    MenuBarComponent,
+    ProveedorComponent,
+    ComprasComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
