@@ -12,4 +12,9 @@ export class ComprasComponent implements OnInit {
   ngOnInit() {
   }
 
+
+    typesOfShoes: string[] = ['Boots', 'Clogs', 'Loafers', 'Moccasins', 'Sneakers'];
+  
+  
+
 }

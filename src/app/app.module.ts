@@ -7,23 +7,24 @@ import { MatIconModule } from '@angular/material';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import {MatToolbarModule} from '@angular/material/toolbar'; 
+import {MatListModule} from '@angular/material/list';
 
 
 import { AppComponent } from './app.component';
-import { MenuBarComponent } from './Components/menu-bar/menu-bar.component';
 import { ProveedorComponent } from './pages/proveedor/proveedor.component';
 import { ComprasComponent } from './pages/compras/compras.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+import { ListMenuItemsComponent } from './components/list-menu-items/list-menu-items.component';
 
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    MenuBarComponent,
     ProveedorComponent,
     ComprasComponent,
-    DashboardComponent
+    DashboardComponent,
+    ListMenuItemsComponent
   ],
   imports: [
     BrowserModule,
@@ -32,7 +33,8 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
     MatSidenavModule,
     MatIconModule,
     MatButtonModule,
-    MatToolbarModule
+    MatToolbarModule,
+    MatListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
