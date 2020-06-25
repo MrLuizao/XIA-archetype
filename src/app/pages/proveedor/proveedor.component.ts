@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { MockConsumeService } from 'src/app/Services/mock-consume.service';
 
 @Component({
   selector: 'app-proveedor',
@@ -7,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ProveedorComponent implements OnInit {
 
-  constructor() { }
+  dataService: any[] = [];
+
+  constructor( private mockService: MockConsumeService ) { }
 
   ngOnInit() {
+    this.mockService.getDataDummy()
+      .subscribe( (resp:any) => {
+        this.dataService = resp;
+        console.log('DATA: ', resp);
+        
+      });
   }
 
 }

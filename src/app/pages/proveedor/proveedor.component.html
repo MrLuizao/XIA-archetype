@@ -21,6 +21,14 @@
             &nbsp;&nbsp;
             <mat-icon>store</mat-icon>
         </mat-toolbar>
+
+
+          <mat-selection-list #shoes class="mat-elevation-z8 wrap-contain mat-table">
+            <mat-list-option *ngFor="let item of dataService">
+              {{item.name}}
+              <mat-divider></mat-divider>
+            </mat-list-option>
+          </mat-selection-list>
   
     </div>
 

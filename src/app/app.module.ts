@@ -1,13 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatIconModule } from '@angular/material';
+import { MatIconModule, MatTableModule, MatGridListModule, MatCardModule } from '@angular/material';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
-import {MatToolbarModule} from '@angular/material/toolbar'; 
-import {MatListModule} from '@angular/material/list';
+import { MatToolbarModule } from '@angular/material/toolbar'; 
+import { MatListModule } from '@angular/material/list';
+import { HttpClientModule } from '@angular/common/http';
 
 
 import { AppComponent } from './app.component';
@@ -34,7 +34,11 @@ import { ListMenuItemsComponent } from './components/list-menu-items/list-menu-i
     MatIconModule,
     MatButtonModule,
     MatToolbarModule,
-    MatListModule
+    MatListModule,
+    HttpClientModule,
+    MatTableModule,
+    MatGridListModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
