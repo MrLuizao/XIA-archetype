@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatIconModule, MatTableModule, MatGridListModule, MatCardModule } from '@angular/material';
+import { MatIconModule, MatTableModule, MatGridListModule, MatCardModule, MatDialogModule, MatFormFieldModule, MatInputModule } from '@angular/material';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar'; 
@@ -15,6 +15,9 @@ import { ProveedorComponent } from './pages/proveedor/proveedor.component';
 import { ComprasComponent } from './pages/compras/compras.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
 import { ListMenuItemsComponent } from './Components/list-menu-items/list-menu-items.component';
+import { LoginModalComponent } from './dialogs/login-modal/login-modal.component';
+import { RegistryModalComponent } from './dialogs/registry-modal/registry-modal.component';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 
 
@@ -24,7 +27,9 @@ import { ListMenuItemsComponent } from './Components/list-menu-items/list-menu-i
     ProveedorComponent,
     ComprasComponent,
     DashboardComponent,
-    ListMenuItemsComponent
+    ListMenuItemsComponent,
+    LoginModalComponent,
+    RegistryModalComponent
   ],
   imports: [
     BrowserModule,
@@ -38,8 +43,17 @@ import { ListMenuItemsComponent } from './Components/list-menu-items/list-menu-i
     HttpClientModule,
     MatTableModule,
     MatGridListModule,
-    MatCardModule
+    MatCardModule,
+    MatDialogModule,
+    MatFormFieldModule,
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
+  entryComponents: [
+    LoginModalComponent,
+    RegistryModalComponent
+ ],
   providers: [],
   bootstrap: [AppComponent]
 })

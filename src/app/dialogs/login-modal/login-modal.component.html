@@ -1,0 +1,43 @@
+
+<div mat-dialog-content id="edited-modal">
+  <h1 class="centered" mat-dialog-title>XIA</h1>
+
+  <form class="example-form">
+    <p>
+      <mat-form-field class="example-full-width">
+        <mat-label>Email</mat-label>
+        <input matInput [formControl]="emailFormControl" >
+        <mat-error *ngIf="emailFormControl.hasError('email') && !emailFormControl.hasError('required')">
+          Please enter a valid email address
+        </mat-error>
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          <strong>Verifica el email ingresado</strong>
+        </mat-error>
+      </mat-form-field>
+    </p>
+
+    <p>
+      <mat-form-field class="example-full-width">
+        <mat-label>Password</mat-label>
+        <input matInput [formControl]="emailFormControl" >
+        <mat-error *ngIf="emailFormControl.hasError('required')">
+          <strong>Verifica el password ingresado</strong>
+        </mat-error>
+      </mat-form-field>
+    </p>
+
+    
+  </form>
+  
+  <button mat-raised-button color="primary" (click)="onLogin()" class="fill-btn">  Iniciar Sesión </button>
+
+  <div class="down-top">
+    <div class="centered">
+      <span>¿No tienes cuenta? </span>
+    </div>
+      <button mat-button class="fill-btn"><strong>Regístrate</strong></button>
+  </div>
+
+
+</div>
+

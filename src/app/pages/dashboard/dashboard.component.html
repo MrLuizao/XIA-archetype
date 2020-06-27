@@ -12,15 +12,23 @@
         <mat-toolbar>
             <button mat-icon-button aria-label="Example icon button with a vertical three dot icon" (click)="drawer.toggle()" class="btn-menu-pos">
               <mat-icon>more_vert</mat-icon>
-              <!-- <mat-icon>menu_open</mat-icon> -->
             </button>
 
             &nbsp;
             <p>Dashboard</p>
-            
             &nbsp;&nbsp;
             <mat-icon>store</mat-icon>
+
+            <span class="example-spacer"></span>
+
+            <button mat-button slot="end" (click)="openDialog()">
+                Ingresar &nbsp;&nbsp;
+              <mat-icon>login</mat-icon>
+            </button>
+
         </mat-toolbar>
+
+
 
         <mat-grid-list cols="4" rowHeight="2:2" class="wrap-contain">
 
