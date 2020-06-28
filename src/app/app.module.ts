@@ -18,6 +18,7 @@ import { ListMenuItemsComponent } from './Components/list-menu-items/list-menu-i
 import { LoginModalComponent } from './dialogs/login-modal/login-modal.component';
 import { RegistryModalComponent } from './dialogs/registry-modal/registry-modal.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
 
 
 
@@ -29,7 +30,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
     DashboardComponent,
     ListMenuItemsComponent,
     LoginModalComponent,
-    RegistryModalComponent
+    RegistryModalComponent,
+    LoginPageComponent
   ],
   imports: [
     BrowserModule,

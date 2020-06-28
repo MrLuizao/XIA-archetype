@@ -15,9 +15,9 @@ export class DashboardComponent implements OnInit {
   constructor( private mockService: MockConsumeService,
                public dialog: MatDialog) {}
 
-   openDialog() {
-    this.dialog.open(LoginModalComponent);
-  }
+  //  openDialog() {
+  //   this.dialog.open(LoginModalComponent);
+  // }
 
   ngOnInit() {
     this.mockService.getDataDummy()

@@ -1,0 +1,42 @@
+
+<mat-drawer-container class="example-container bgc-element" autosize >
+
+
+        <div class="form-wraper">
+
+            <mat-card class="form-size-container">
+
+                <p>
+                    <mat-form-field appearance="legacy">
+                        <mat-label>Enter your email</mat-label>
+                            <input matInput placeholder="pat@example.com" [formControl]="email" required>
+
+                            <mat-icon matSuffix>mail_outline</mat-icon>
+                            
+                        <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                    </mat-form-field>
+
+                </p>
+
+                <p>
+                    <mat-form-field appearance="legacy">
+                        <mat-label>Enter your password</mat-label>
+                            <input matInput [type]="hide ? 'password' : 'text'">
+                        <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                            <mat-icon matSuffix class="icon-xl">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                        </button>
+                    </mat-form-field>
+                </p>
+
+            </mat-card>
+
+
+        </div>
+
+        
+
+
+</mat-drawer-container>
+
+
+

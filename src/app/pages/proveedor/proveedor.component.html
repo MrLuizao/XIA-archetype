@@ -10,7 +10,7 @@
 
         
         <mat-toolbar>
-            <button mat-icon-button aria-label="Example icon button with a vertical three dot icon" (click)="drawer.toggle()" class="btn-menu-pos">
+            <button mat-icon-button (click)="drawer.toggle()" class="btn-menu-pos">
               <mat-icon>more_vert</mat-icon>
               <!-- <mat-icon>menu_open</mat-icon> -->
             </button>
@@ -22,13 +22,15 @@
             <mat-icon>store</mat-icon>
         </mat-toolbar>
 
-
+        <div class="fill-size">
           <mat-selection-list #shoes class="mat-elevation-z8 wrap-contain mat-table">
             <mat-list-option *ngFor="let item of dataService">
               {{item.name}}
               <mat-divider></mat-divider>
             </mat-list-option>
           </mat-selection-list>
+        </div>
+
   
     </div>
 

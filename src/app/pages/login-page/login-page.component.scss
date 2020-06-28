@@ -1,0 +1,19 @@
+.bgc-element{
+    background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTngZ2J7ym9HpoiDOtf5dk-3j-l-npX-ln9Lg&usqp=CAU');
+    background-size: cover;
+    background-position: right bottom;
+}
+.form-wraper{
+
+    height: 100%;
+    flex-direction: row;
+    box-sizing: border-box;
+    display: flex;
+    place-content: center;
+    align-items: center;
+}
+
+
+.form-size-container{
+    padding: 40px 70px 50px;
+}

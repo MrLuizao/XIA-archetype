@@ -28,15 +28,19 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .wrap-contain{
-
-    width: 95%;
-    margin: 3rem;
+    margin: 3%;
+    min-width: 94%;
+    max-width: 94%;
 }
 
 .example-spacer {
     flex: 1 1 auto;
 }
 
-.fill-btn{
+.fill-size{
     width: 100%;
+}
+
+.icon-xl{
+    font-size: x-large !important;
 }
