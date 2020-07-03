@@ -8,6 +8,7 @@ import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar'; 
 import { MatListModule } from '@angular/material/list';
 import { HttpClientModule } from '@angular/common/http';
+import { ToastrModule } from 'ngx-toastr';
 
 
 import { AppComponent } from './app.component';
@@ -50,7 +51,8 @@ import { LoginPageComponent } from './pages/login-page/login-page.component';
     MatFormFieldModule,
     MatInputModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    ToastrModule.forRoot()
   ],
   entryComponents: [
     LoginModalComponent,

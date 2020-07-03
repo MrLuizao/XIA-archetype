@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { MockConsumeService } from 'src/app/Services/mock-consume.service';
 import { MatDialog } from '@angular/material/dialog';
-import { LoginModalComponent } from 'src/app/dialogs/login-modal/login-modal.component';
 
 @Component({
   selector: 'app-dashboard',
