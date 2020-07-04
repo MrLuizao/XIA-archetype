@@ -1,0 +1,16 @@
+
+<button mat-button slot="end" [matMenuTriggerFor]="menu">
+    Luis Vázquez &nbsp;&nbsp;
+  <mat-icon> more_vert </mat-icon>
+</button>
+
+<mat-menu #menu="matMenu">
+    <button mat-menu-item>
+      <mat-icon>perm_identity</mat-icon>
+      <span>Perfil</span>
+    </button>
+    <button mat-menu-item (click)="dialogConfirmClose()">
+        <mat-icon>login</mat-icon>
+        <span>Salir</span>
+    </button>
+  </mat-menu>

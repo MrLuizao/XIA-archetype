@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatIconModule, MatTableModule, MatGridListModule, MatCardModule, MatDialogModule, MatFormFieldModule, MatInputModule } from '@angular/material';
+import { MatIconModule, MatTableModule, MatGridListModule, MatCardModule, MatDialogModule, MatFormFieldModule, MatInputModule, MatMenuModule } from '@angular/material';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar'; 
@@ -20,6 +20,8 @@ import { LoginModalComponent } from './dialogs/login-modal/login-modal.component
 import { RegistryModalComponent } from './dialogs/registry-modal/registry-modal.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { ToolsUserComponent } from './Components/tools-user/tools-user.component';
+import { ConfirmCloseComponent } from './dialogs/confirm-close/confirm-close.component';
 
 
 
@@ -32,7 +34,9 @@ import { LoginPageComponent } from './pages/login-page/login-page.component';
     ListMenuItemsComponent,
     LoginModalComponent,
     RegistryModalComponent,
-    LoginPageComponent
+    LoginPageComponent,
+    ToolsUserComponent,
+    ConfirmCloseComponent
   ],
   imports: [
     BrowserModule,
@@ -49,6 +53,7 @@ import { LoginPageComponent } from './pages/login-page/login-page.component';
     MatCardModule,
     MatDialogModule,
     MatFormFieldModule,
+    MatMenuModule,
     MatInputModule,
     FormsModule,
     ReactiveFormsModule,
@@ -56,7 +61,8 @@ import { LoginPageComponent } from './pages/login-page/login-page.component';
   ],
   entryComponents: [
     LoginModalComponent,
-    RegistryModalComponent
+    RegistryModalComponent,
+    ConfirmCloseComponent
  ],
   providers: [],
   bootstrap: [AppComponent]
