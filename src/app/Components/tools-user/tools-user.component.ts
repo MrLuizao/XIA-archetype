@@ -22,8 +22,4 @@ export class ToolsUserComponent implements OnInit {
     })
   }
 
-
-  closeSession(){
-  }
-
 }

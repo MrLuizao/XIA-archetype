@@ -21,4 +21,8 @@ export class LoginModalComponent {
     this.dialogRef.close();
   }
 
+  onLogin(){
+    
+  }
+
 }

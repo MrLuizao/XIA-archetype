@@ -12,7 +12,7 @@ export class MockConsumeService {
 
   getDataDummy(){
 
-    return this._http.get('https://restcountries.eu/rest/v2/lang/en');
+    return this._http.get('https://restcountries.eu/rest/v2/lang/es');
     
   }
 

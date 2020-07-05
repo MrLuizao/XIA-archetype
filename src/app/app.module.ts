@@ -22,6 +22,7 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { ToolsUserComponent } from './Components/tools-user/tools-user.component';
 import { ConfirmCloseComponent } from './dialogs/confirm-close/confirm-close.component';
+import { CardsHomeComponent } from './Components/cards-home/cards-home.component';
 
 
 
@@ -36,7 +37,8 @@ import { ConfirmCloseComponent } from './dialogs/confirm-close/confirm-close.com
     RegistryModalComponent,
     LoginPageComponent,
     ToolsUserComponent,
-    ConfirmCloseComponent
+    ConfirmCloseComponent,
+    CardsHomeComponent
   ],
   imports: [
     BrowserModule,

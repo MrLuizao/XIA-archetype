@@ -12,13 +12,13 @@ import { Router } from '@angular/router';
 })
 export class LoginPageComponent implements OnInit{
 
+  hide = true;
   user: UserModel;
-
   email = new FormControl('', [Validators.required, Validators.email]);
 
   getErrorMessage() {
     if (this.email.hasError('required')) {
-      return 'You must enter a value';
+      return 'Ingresa un formato de correo válido';
     }
 
     return this.email.hasError('email') ? 'Not a valid email' : '';
@@ -32,8 +32,8 @@ export class LoginPageComponent implements OnInit{
 
     this.user = new UserModel();
 
-    this.user.email = ''
-    this.user.password = ''
+    this.user.email = 'luis@xia.com'
+    this.user.password = '12345abc'
 
   }
 

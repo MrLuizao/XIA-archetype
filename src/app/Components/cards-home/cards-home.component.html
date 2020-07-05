@@ -1,0 +1,12 @@
+
+<div *ngFor="let item of dataService;" class="col-sm-12 col-md-6 col-lg-4 col-xl-3 card-inline">
+    <mat-card class="example-card" >
+      <mat-card-header>
+        <mat-card-title>{{item.nativeName}}</mat-card-title>
+      </mat-card-header>
+      <img mat-card-image src="{{item.flag}}" alt="" >
+      <mat-card-content>
+        <p>Población: &nbsp; {{item.population | number}}</p>
+      </mat-card-content>
+    </mat-card>
+</div>
