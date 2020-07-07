@@ -1,15 +1,12 @@
 
-<!-- <mat-progress-bar mode="indeterminate" *ngIf="progressBar" color=warn></mat-progress-bar> -->
 
-<mat-drawer-container class="example-container" autosize>
+<mat-drawer-container class="example-container">
     <mat-drawer #drawer class="example-sidenav" mode="side">
       <app-list-menu-items></app-list-menu-items>
     </mat-drawer>
     
   
     <div class="example-sidenav-content">
-
-        
         <mat-toolbar class="mat-elevation-z6">
             <button mat-icon-button (click)="drawer.toggle()" class="btn-menu-pos">
               <mat-icon>menu</mat-icon>
@@ -26,10 +23,14 @@
 
         </mat-toolbar>
 
+        <!-- <mat-progress-bar mode="indeterminate" *ngIf="progressBar" color=primary></mat-progress-bar> -->
+
+        <mat-spinner mode="indeterminate" *ngIf="progressBar" color=primary class="spinner-pos"></mat-spinner>
+
         <!-- EMPIEZA TABLA -->
-        <div class="wrap-contain">
+        <div class="wrap-contain" autosize  >
           
-            <div class="mat-toolbar-single-row">
+            <div class="mat-toolbar-single-row" *ngIf="!progressBar" >
               <mat-form-field >
                 <input matInput (keyup)="applyFilter($event.target.value)" placeholder="Buscar...">       
               </mat-form-field>
@@ -42,7 +43,7 @@
               </button>
             </div>
           
-            <table mat-table [dataSource]="dataSource"  class="mat-table cdk-table mat-elevation-z3">  
+            <table mat-table [dataSource]="dataSource"  class="mat-table cdk-table mat-elevation-z3"   *ngIf="!progressBar" >  
           
                   <ng-container matColumnDef="name">
                     <th mat-header-cell *matHeaderCellDef class="cantered"> Nombre</th>
@@ -87,16 +88,16 @@
             </table>
           
           
-          
-            <div class="foot-center mat-table cdk-table mat-elevation-z3" >
-              <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+            <div [hidden]="progressBar">
+              <div class="foot-center mat-table cdk-table mat-elevation-z3"  >
+                <mat-paginator [pageSizeOptions]="[5, 10, 20]" showFirstLastButtons></mat-paginator>
+              </div>
             </div>
 
-          </div>
+        </div>
 
         <!-- TERMINA TABLA -->
 
-  
     </div>
 
 </mat-drawer-container>

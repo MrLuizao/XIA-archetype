@@ -8,6 +8,8 @@ import { MockConsumeService } from 'src/app/Services/mock-consume.service';
 })
 export class CardsHomeComponent implements OnInit {
 
+  progressBar= true;
+
   dataService: any[] = [];
 
   constructor( private mockService: MockConsumeService,) { }
@@ -15,6 +17,7 @@ export class CardsHomeComponent implements OnInit {
   ngOnInit() {
     this.mockService.getDataDummy()
     .subscribe( (resp:any) => {
+      this.progressBar = false;
       this.dataService = resp;
       console.log('DATA: ', resp);
       

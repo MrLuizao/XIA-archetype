@@ -64,7 +64,7 @@ export class ProveedorComponent implements OnInit {
   } 
 
   directoryList(){
-    // this.progressBar = true;
+    this.progressBar = true;
     this.service.getListDirectory().subscribe( (resp:any) =>{
        this.dataSource.data = resp.data;
        this.progressBar = false;
