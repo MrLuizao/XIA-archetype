@@ -1,5 +1,7 @@
 @import "~bootstrap/dist/css/bootstrap.css";
 
+@import '~@sweetalert2/theme-material-ui/material-ui.scss';
+
 
 // INIT CSS LIBRERIA TOAST    
 .toast-center-center {
@@ -227,9 +229,9 @@ button:focus{
 }
 
 .wrap-contain{
-    margin: 3%;
-    min-width: 94%;
-    max-width: 94%;
+    margin: 6%;
+    min-width: 88%;
+    max-width: 88%;
 }
 
 .example-spacer {

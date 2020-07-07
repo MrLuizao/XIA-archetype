@@ -2,7 +2,29 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatIconModule, MatTableModule, MatGridListModule, MatCardModule, MatDialogModule, MatFormFieldModule, MatInputModule, MatMenuModule } from '@angular/material';
+// import { MatIconModule, MatTableModule, MatGridListModule, MatCardModule, MatDialogModule, MatFormFieldModule, MatInputModule, MatMenuModule, MatProgressBar } from '@angular/material';
+import {
+  MatIconModule,
+  MatInputModule,
+  MatProgressBarModule,
+  MatSnackBarModule,
+  MatSelectModule, 
+  MatCardModule,
+  MatExpansionModule,
+  MatPaginatorModule,
+  MatMenuModule,
+  MatTableModule,
+  MatSlideToggleModule,
+  MatDialogModule,
+  MatTabsModule,
+  MatGridListModule,
+  MatProgressSpinnerModule,
+  MatDatepickerModule,
+  MatNativeDateModule,
+  MatRadioModule,
+  MatAutocompleteModule
+  } from '@angular/material';
+
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { MatButtonModule } from '@angular/material/button';
 import { MatToolbarModule } from '@angular/material/toolbar'; 
@@ -25,6 +47,31 @@ import { ConfirmCloseComponent } from './dialogs/confirm-close/confirm-close.com
 import { CardsHomeComponent } from './Components/cards-home/cards-home.component';
 
 
+export const MATERIAL_COMPONENTS = [
+  MatToolbarModule,
+  MatSidenavModule,
+  MatButtonModule,
+  MatListModule,
+  MatIconModule,
+  MatInputModule,
+  MatProgressBarModule,
+  MatSnackBarModule,
+  MatSelectModule,
+  MatCardModule,
+  MatExpansionModule,
+  MatPaginatorModule,
+  MatMenuModule,
+  MatTableModule,
+  // MatStepperModule,
+  MatSlideToggleModule,
+  MatDialogModule,
+  MatTabsModule,
+  MatProgressSpinnerModule, 
+  MatDatepickerModule,
+  MatNativeDateModule,
+  MatRadioModule, 
+  MatAutocompleteModule
+]
 
 @NgModule({
   declarations: [
@@ -54,12 +101,14 @@ import { CardsHomeComponent } from './Components/cards-home/cards-home.component
     MatGridListModule,
     MatCardModule,
     MatDialogModule,
-    MatFormFieldModule,
+    // MatFormFieldModule,
     MatMenuModule,
     MatInputModule,
+    // MatProgressBar,
     FormsModule,
     ReactiveFormsModule,
-    ToastrModule.forRoot()
+    ToastrModule.forRoot(),
+    MATERIAL_COMPONENTS,
   ],
   entryComponents: [
     LoginModalComponent,

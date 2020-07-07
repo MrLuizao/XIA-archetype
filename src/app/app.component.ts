@@ -8,15 +8,4 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'XIA-archetype';
 
-  // @HostBinding('class') componentCssClass: any;
-
-  // constructor( public overlayContainer: OverlayContainer){
-
-  // }
-
-  // onSetTheme(e: string){
-  //   this.overlayContainer.getContainerElement().classList.add(e);
-  //   this.componentCssClass = e;
-
-  // }
 }
