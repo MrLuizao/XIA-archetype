@@ -77,8 +77,8 @@ export class ProveedorComponent implements OnInit {
      text: "¿Estás seguro de eliminar el registro?",
      icon: 'warning',
      showCancelButton: true,
-    //  confirmButtonColor: '#963CBD',
-    //  cancelButtonColor: '#ff08a1',
+   //   confirmButtonColor: '#963CBD',
+   //   cancelButtonColor: '#ff08a1',
      confirmButtonText: 'Si'
   })
   .then((result) => {
