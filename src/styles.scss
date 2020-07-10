@@ -200,6 +200,37 @@
 html, body { height: 100%; }
 body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 
+.example-card {
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.example-card:hover {
+  cursor: pointer;
+  transform: translate3d(0,-4px,0);
+  box-shadow: 0 12px 30px 0 rgba(0,0,0,.2);
+  transition-property: box-shadow,transform;
+  transition-duration: 600ms;
+  transition-timing-function: cubic-bezier(.16,1,.29,.99)
+}
+
+.card-inline{
+  display: inline-block;
+}
+
+.mat-card-image{
+  height: 250px;
+}
+
+.width-fit-card{
+  height: 15rem;
+  // width: 15rem;
+}
+
+.paddin-card{
+  padding: 3rem;
+}
+
 button:focus{
   outline: none !important;
 }
@@ -331,3 +362,4 @@ body > div.swal2-container.swal2-center.swal2-backdrop-show > div > div.swal2-ac
 button.swal2-cancel.swal2-styled {
   margin-right: 15%;
 }
+

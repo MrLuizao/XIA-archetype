@@ -1,0 +1,273 @@
+[
+    {
+        "id": "",
+        "image": "assets/images/warehouse.png",
+        "color": "",
+        "name": "Almacen",
+        "redirect": "/proveedor",
+
+        "submenu": [
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            },
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            },
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            }
+
+        ]
+    },
+    {
+        "id": "",
+        "image": "assets/images/warehouse.png",
+        "color": "",
+        "name": "Almacen",
+        "redirect": "/proveedor",
+
+        "submenu": [
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            },
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            },
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            }
+
+        ]
+
+    },
+    {
+        "id": "",
+        "image": "assets/images/warehouse.png",
+        "color": "",
+        "name": "Almacen",
+        "redirect": "/proveedor",
+
+        "submenu": [
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            },
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            },
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            }
+
+        ]
+
+    },
+
+    {
+        "id": "",
+        "image": "assets/images/warehouse.png",
+        "color": "",
+        "name": "Almacen",
+        "redirect": "/proveedor",
+
+        "submenu": [
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            },
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            },
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            }
+
+        ]
+    },
+    {
+        "id": "",
+        "image": "assets/images/warehouse.png",
+        "color": "",
+        "name": "Almacen",
+        "redirect": "/proveedor",
+
+        "submenu": [
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            },
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            },
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            }
+
+        ]
+
+    },
+    {
+        "id": "",
+        "image": "assets/images/warehouse.png",
+        "color": "",
+        "name": "Almacen",
+        "redirect": "/proveedor",
+
+        "submenu": [
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            },
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            },
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            }
+
+        ]
+
+    },
+    {
+        "id": "",
+        "image": "assets/images/warehouse.png",
+        "color": "",
+        "name": "Almacen",
+        "redirect": "/proveedor",
+
+        "submenu": [
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            },
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            },
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            }
+
+        ]
+    },
+    {
+        "id": "",
+        "image": "assets/images/warehouse.png",
+        "color": "",
+
+        "name": "Almacen",
+        "redirect": "/proveedor",
+
+        "submenu": [
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            },
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            },
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            }
+
+        ]
+
+    },
+    {
+        "id": "",
+        "image": "assets/images/warehouse.png",
+        "color": "",
+
+        "name": "Almacen",
+        "redirect": "/proveedor",
+
+        "submenu": [
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            },
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            },
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            }
+
+        ]
+
+    }
+     
+]

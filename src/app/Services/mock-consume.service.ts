@@ -16,4 +16,10 @@ export class MockConsumeService {
     
   }
 
+  getMenuOptions(){
+
+    return this._http.get('assets/data/menu.json');
+    
+  }
+
 }

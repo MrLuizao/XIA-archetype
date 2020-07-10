@@ -2,7 +2,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-// import { MatIconModule, MatTableModule, MatGridListModule, MatCardModule, MatDialogModule, MatFormFieldModule, MatInputModule, MatMenuModule, MatProgressBar } from '@angular/material';
 import {
   MatIconModule,
   MatInputModule,
@@ -46,6 +45,7 @@ import { ToolsUserComponent } from './Components/tools-user/tools-user.component
 import { ConfirmCloseComponent } from './dialogs/confirm-close/confirm-close.component';
 import { CardsHomeComponent } from './Components/cards-home/cards-home.component';
 import { TableUsersComponent } from './Components/table-users/table-users.component';
+import { CardMenuDashboardComponent } from './Components/card-menu-dashboard/card-menu-dashboard.component';
 
 
 export const MATERIAL_COMPONENTS = [
@@ -63,7 +63,6 @@ export const MATERIAL_COMPONENTS = [
   MatPaginatorModule,
   MatMenuModule,
   MatTableModule,
-  // MatStepperModule,
   MatSlideToggleModule,
   MatDialogModule,
   MatTabsModule,
@@ -87,7 +86,8 @@ export const MATERIAL_COMPONENTS = [
     ToolsUserComponent,
     ConfirmCloseComponent,
     CardsHomeComponent,
-    TableUsersComponent
+    TableUsersComponent,
+    CardMenuDashboardComponent
   ],
   imports: [
     BrowserModule,
@@ -103,10 +103,8 @@ export const MATERIAL_COMPONENTS = [
     MatGridListModule,
     MatCardModule,
     MatDialogModule,
-    // MatFormFieldModule,
     MatMenuModule,
     MatInputModule,
-    // MatProgressBar,
     FormsModule,
     ReactiveFormsModule,
     ToastrModule.forRoot(),
