@@ -45,6 +45,7 @@ import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { ToolsUserComponent } from './Components/tools-user/tools-user.component';
 import { ConfirmCloseComponent } from './dialogs/confirm-close/confirm-close.component';
 import { CardsHomeComponent } from './Components/cards-home/cards-home.component';
+import { TableUsersComponent } from './Components/table-users/table-users.component';
 
 
 export const MATERIAL_COMPONENTS = [
@@ -85,7 +86,8 @@ export const MATERIAL_COMPONENTS = [
     LoginPageComponent,
     ToolsUserComponent,
     ConfirmCloseComponent,
-    CardsHomeComponent
+    CardsHomeComponent,
+    TableUsersComponent
   ],
   imports: [
     BrowserModule,
