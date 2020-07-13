@@ -1,15 +1,23 @@
 
-
 <div class="wrap-dash">
 
     <div class="col-sm-12 col-md-6 col-lg-4 col-xl-3 card-inline paddin-card"
     *ngFor="let item of menuItems;" [routerLink]="item.redirect">
 
+
         <mat-card class="example-card width-fit-card">
 
         <mat-card-content >
 
-            <img mat-card-image src="{{item.image}}" alt="" >
+            <div class="centered">
+                <div class="bottom-card">
+                    <mat-icon >{{item.image}}</mat-icon>
+                </div>
+                
+                <h3>{{item.name}}</h3>
+
+            </div>
+
 
         </mat-card-content>
         

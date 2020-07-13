@@ -22,4 +22,11 @@ export class MockConsumeService {
     
   }
 
+  getDataUsers(){
+
+    return this._http.get('https://jsonplaceholder.typicode.com/users');
+    // return this._http.get('assets/data/users.json');
+    
+  }
+
 }

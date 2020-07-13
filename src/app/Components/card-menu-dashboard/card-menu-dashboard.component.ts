@@ -10,8 +10,11 @@ export class CardMenuDashboardComponent implements OnInit {
 
   // menuItems: MenuModel[] = [];
   menuItems: any[] = [];
+  id: any;
 
   constructor( private mockService: MockConsumeService ) { }
+
+  public submenu : boolean = false;
 
   ngOnInit() {
 

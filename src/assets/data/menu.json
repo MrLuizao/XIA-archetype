@@ -1,38 +1,20 @@
 [
     {
-        "id": "",
-        "image": "assets/images/warehouse.png",
+        "id": "1",
+        "image": "store",
         "color": "",
         "name": "Almacen",
         "redirect": "/proveedor",
 
-        "submenu": [
-            {
-                "id": "",
-                "image": "",
-                "url": "",
-                "redirect": "/compras"
-            },
-            {
-                "id": "",
-                "image": "",
-                "url": "",
-                "redirect": "/compras"
-            },
-            {
-                "id": "",
-                "image": "",
-                "url": "",
-                "redirect": "/compras"
-            }
+        "submenu": {
 
-        ]
+        }
     },
     {
-        "id": "",
-        "image": "assets/images/warehouse.png",
+        "id": "2",
+        "image": "add_business",
         "color": "",
-        "name": "Almacen",
+        "name": "Compras",
         "redirect": "/proveedor",
 
         "submenu": [
@@ -59,10 +41,10 @@
 
     },
     {
-        "id": "",
-        "image": "assets/images/warehouse.png",
+        "id": "3",
+        "image": "monetization_on",
         "color": "",
-        "name": "Almacen",
+        "name": "Ventas",
         "redirect": "/proveedor",
 
         "submenu": [
@@ -90,10 +72,10 @@
     },
 
     {
-        "id": "",
-        "image": "assets/images/warehouse.png",
+        "id": "4",
+        "image": "point_of_sale",
         "color": "",
-        "name": "Almacen",
+        "name": "Caja",
         "redirect": "/proveedor",
 
         "submenu": [
@@ -119,40 +101,10 @@
         ]
     },
     {
-        "id": "",
-        "image": "assets/images/warehouse.png",
+        "id": "5",
+        "image": "fact_check",
         "color": "",
-        "name": "Almacen",
-        "redirect": "/proveedor",
-
-        "submenu": [
-            {
-                "id": "",
-                "image": "",
-                "url": "",
-                "redirect": "/compras"
-            },
-            {
-                "id": "",
-                "image": "",
-                "url": "",
-                "redirect": "/compras"
-            },
-            {
-                "id": "",
-                "image": "",
-                "url": "",
-                "redirect": "/compras"
-            }
-
-        ]
-
-    },
-    {
-        "id": "",
-        "image": "assets/images/warehouse.png",
-        "color": "",
-        "name": "Almacen",
+        "name": "Facturación",
         "redirect": "/proveedor",
 
         "submenu": [
@@ -179,40 +131,10 @@
 
     },
     {
-        "id": "",
-        "image": "assets/images/warehouse.png",
+        "id": "6",
+        "image": "local_shipping",
         "color": "",
-        "name": "Almacen",
-        "redirect": "/proveedor",
-
-        "submenu": [
-            {
-                "id": "",
-                "image": "",
-                "url": "",
-                "redirect": "/compras"
-            },
-            {
-                "id": "",
-                "image": "",
-                "url": "",
-                "redirect": "/compras"
-            },
-            {
-                "id": "",
-                "image": "",
-                "url": "",
-                "redirect": "/compras"
-            }
-
-        ]
-    },
-    {
-        "id": "",
-        "image": "assets/images/warehouse.png",
-        "color": "",
-
-        "name": "Almacen",
+        "name": "Logística",
         "redirect": "/proveedor",
 
         "submenu": [
@@ -239,11 +161,164 @@
 
     },
     {
-        "id": "",
-        "image": "assets/images/warehouse.png",
+        "id": "7",
+        "image": "account_balance",
+        "color": "",
+        "name": "Contabilidad",
+        "redirect": "/proveedor",
+
+        "submenu": [
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            },
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            },
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            }
+
+        ]
+    },
+    {
+        "id": "8",
+        "image": "language",
         "color": "",
 
-        "name": "Almacen",
+        "name": "Empresa",
+        "redirect": "/proveedor",
+
+        "submenu": [
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            },
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            },
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            }
+
+        ]
+
+    },
+    {
+        "id": "9",
+        "image": "airport_shuttle",
+        "color": "",
+
+        "name": "POS",
+        "redirect": "/proveedor",
+
+        "submenu": [
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            },
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            },
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            }
+
+        ]
+
+    },
+        {
+        "id": "10",
+        "image": "local_grocery_store",
+        "color": "",
+
+        "name": "E-comerce",
+        "redirect": "/proveedor",
+
+        "submenu": [
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            },
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            },
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            }
+
+        ]
+
+    },
+    {
+        "id": "11",
+        "image": "pie_chart",
+        "color": "",
+
+        "name": "Reportes",
+        "redirect": "/proveedor",
+
+        "submenu": [
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            },
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            },
+            {
+                "id": "",
+                "image": "",
+                "url": "",
+                "redirect": "/compras"
+            }
+
+        ]
+
+    },
+    {
+        "id": "12",
+        "image": "settings_applications",
+        "color": "",
+
+        "name": "Configuración",
         "redirect": "/proveedor",
 
         "submenu": [

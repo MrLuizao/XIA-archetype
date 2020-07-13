@@ -219,12 +219,13 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 }
 
 .mat-card-image{
-  height: 250px;
+  width: calc(100% + 32px);
+  height: 15rem;
+  padding: 3rem;
 }
 
 .width-fit-card{
   height: 15rem;
-  // width: 15rem;
 }
 
 .paddin-card{
@@ -362,4 +363,6 @@ body > div.swal2-container.swal2-center.swal2-backdrop-show > div > div.swal2-ac
 button.swal2-cancel.swal2-styled {
   margin-right: 15%;
 }
+
+
 
