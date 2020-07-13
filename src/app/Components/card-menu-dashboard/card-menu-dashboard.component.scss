@@ -1,22 +1,66 @@
 
-.wrap-dash{
-    margin-left: 3rem;
-    margin-right: 3rem;
-    margin-top: 2rem;
-    margin-bottom: 3rem;
+.all-layer-cards
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.col-sm-12.col-md-6.col-lg-4.col-xl-3.card-inline.paddin-card.ng-star-inserted:focus {
-    outline: none;
+.body-cards
+{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    min-height: 100vh;
+}
+
+.container{
+    position: relative;
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-template-rows: minmax(100px, auto);
+    margin: 40px;
+    grid-auto-flow: dense;
+    grid-gap: 20px;
+}
+
+.container .box{
+    padding: 20px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+}
+.container .box:hover {
+    cursor: pointer;
+    transform: translate3d(0,-4px,0);
+    box-shadow: 0 12px 30px 0 rgba(0,0,0,.2);
+    transition-property: box-shadow,transform;
+    transition-duration: 600ms;
+    transition-timing-function: cubic-bezier(.16,1,.29,.99)
+}
+
+// .container .box:nth-child(1){
+//     grid-column: span 2;
+//     grid-row: span 1;
+
+// }
+
+// .container .box:nth-child(2){
+//     grid-column: span 1;
+//     grid-row: span 2;
+
+// }
+
+
+.box.ng-star-inserted{
+    outline: none !important;
 }
 
 .material-icons{
-    font-size: 125px !important;
+    font-size: 75px !important;
 }
 .mat-icon{
     width: fit-content !important;
 }
 
-.bottom-card{
-    margin-bottom: 2rem;
-}
