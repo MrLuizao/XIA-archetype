@@ -46,6 +46,7 @@ import { ConfirmCloseComponent } from './dialogs/confirm-close/confirm-close.com
 import { CardsHomeComponent } from './Components/cards-home/cards-home.component';
 import { TableUsersComponent } from './Components/table-users/table-users.component';
 import { CardMenuDashboardComponent } from './Components/card-menu-dashboard/card-menu-dashboard.component';
+import { NavBarDashboardComponent } from './Components/nav-bar-dashboard/nav-bar-dashboard.component';
 
 
 export const MATERIAL_COMPONENTS = [
@@ -87,7 +88,8 @@ export const MATERIAL_COMPONENTS = [
     ConfirmCloseComponent,
     CardsHomeComponent,
     TableUsersComponent,
-    CardMenuDashboardComponent
+    CardMenuDashboardComponent,
+    NavBarDashboardComponent
   ],
   imports: [
     BrowserModule,

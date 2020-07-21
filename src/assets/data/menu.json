@@ -2,7 +2,7 @@
     {
         "id": "1",
         "image": "store",
-        "color": "",
+        "color": "red",
         "name": "Almacen",
         "redirect": "/proveedor",
 
@@ -13,7 +13,7 @@
     {
         "id": "2",
         "image": "add_business",
-        "color": "",
+        "color": "blue",
         "name": "Compras",
         "redirect": "/proveedor",
 
@@ -43,7 +43,7 @@
     {
         "id": "3",
         "image": "monetization_on",
-        "color": "",
+        "color": "green",
         "name": "Ventas",
         "redirect": "/proveedor",
 
@@ -74,7 +74,7 @@
     {
         "id": "4",
         "image": "point_of_sale",
-        "color": "",
+        "color": "pink",
         "name": "Caja",
         "redirect": "/proveedor",
 
@@ -103,7 +103,7 @@
     {
         "id": "5",
         "image": "fact_check",
-        "color": "",
+        "color": "purple",
         "name": "Facturación",
         "redirect": "/proveedor",
 
@@ -133,7 +133,7 @@
     {
         "id": "6",
         "image": "local_shipping",
-        "color": "",
+        "color": "black",
         "name": "Logística",
         "redirect": "/proveedor",
 
@@ -163,7 +163,7 @@
     {
         "id": "7",
         "image": "account_balance",
-        "color": "",
+        "color": "orange",
         "name": "Contabilidad",
         "redirect": "/proveedor",
 
@@ -192,7 +192,7 @@
     {
         "id": "8",
         "image": "language",
-        "color": "",
+        "color": "brown",
 
         "name": "Empresa",
         "redirect": "/proveedor",
@@ -223,7 +223,7 @@
     {
         "id": "9",
         "image": "airport_shuttle",
-        "color": "",
+        "color": "white",
 
         "name": "POS",
         "redirect": "/proveedor",
@@ -254,7 +254,7 @@
         {
         "id": "10",
         "image": "local_grocery_store",
-        "color": "",
+        "color": "grey",
 
         "name": "E-comerce",
         "redirect": "/proveedor",
@@ -285,7 +285,7 @@
     {
         "id": "11",
         "image": "pie_chart",
-        "color": "",
+        "color": "cyan",
 
         "name": "Reportes",
         "redirect": "/proveedor",
@@ -316,7 +316,7 @@
     {
         "id": "12",
         "image": "settings_applications",
-        "color": "",
+        "color": "beige",
 
         "name": "Configuración",
         "redirect": "/proveedor",

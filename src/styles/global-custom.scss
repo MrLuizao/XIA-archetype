@@ -1,0 +1,117 @@
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
+
+.bgc-element{
+  // background-image:url("src/assets/images/log-image.jpg");
+  background-image:url("https://cdn.statically.io/img/www.itl.cat/pngfile/big/212-2125505_3840-x-material-design-light-gray.jpg");
+  background-size: cover;
+  background-position: right bottom;
+  -webkit-filter: brightness(90%);    
+  filter: brightness(90%);
+  
+}
+
+.example-card {
+  cursor: pointer;
+  margin-top: 1rem;
+}
+
+.example-card:hover {
+  cursor: pointer;
+  transform: translate3d(0,-4px,0);
+  box-shadow: 0 12px 30px 0 rgba(0,0,0,.2);
+  transition-property: box-shadow,transform;
+  transition-duration: 600ms;
+  transition-timing-function: cubic-bezier(.16,1,.29,.99);
+}
+
+.card-inline{
+  display: inline-block;
+}
+
+.mat-card-image{
+  width: calc(100% + 32px);
+  height: 15rem;
+  padding: 3rem;
+}
+
+.width-fit-card{
+  height: 15rem;
+}
+
+.paddin-card{
+  padding: 3rem;
+}
+
+button:focus{
+  outline: none !important;
+}
+
+.centered{
+    text-align: center;
+}
+
+.down-top{
+    margin-top: 2rem;
+}
+
+.example-container {
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.5);
+  }
+  
+.example-sidenav-content {
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.example-sidenav {
+    padding: 20px;
+}
+
+.wrap-contain{
+    margin: 6%;
+    min-width: 88%;
+    max-width: 88%;
+}
+
+.example-spacer {
+    flex: 1 1 auto;
+}
+
+.fill-size{
+    width: 100%;
+}
+
+.icon-xl{
+    font-size: x-large !important;
+}
+
+.card-dashboard{
+  width: 33%; 
+  display: inline-block !important; 
+  margin: 3rem;
+  margin-top: 3rem !important;
+}
+
+.top-space-txt{
+  margin-top: 1rem;
+}
+
+.spinner-pos{
+  margin-left: 47%;
+  margin-top: 25%;
+}
+
+
+body > div.swal2-container.swal2-center.swal2-backdrop-show > div > div.swal2-actions > button.swal2-confirm.swal2-styled{
+  margin-right: 3rem;
+}
+
+button.swal2-cancel.swal2-styled {
+  margin-right: 15%;
+}
+

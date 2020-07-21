@@ -1,27 +1,11 @@
 
-<mat-drawer-container class="example-container" autosize>
-    <mat-drawer #drawer class="example-sidenav" mode="side">
-      <app-list-menu-items></app-list-menu-items>
-    </mat-drawer>
-  
+<mat-drawer-container class="example-container bgc-element" autosize>
+
     <div class="example-sidenav-content">
       
-        <mat-toolbar class="mat-elevation-z6">
-            <button mat-icon-button (click)="drawer.toggle()" class="btn-menu-pos">
-              <mat-icon>menu</mat-icon>
-            </button>
-
-            &nbsp;
-            <p class="top-space-txt">Dashboard</p>
-            &nbsp;&nbsp;
-            <mat-icon>store</mat-icon>
-
-            <span class="example-spacer"></span>
-          <app-tools-user></app-tools-user>
-
-        </mat-toolbar>
-
-        <app-card-menu-dashboard></app-card-menu-dashboard>
+      <app-nav-bar-dashboard></app-nav-bar-dashboard>
+      
+      <app-card-menu-dashboard></app-card-menu-dashboard>
 
     </div>
 
