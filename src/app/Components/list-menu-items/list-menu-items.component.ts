@@ -8,17 +8,18 @@ import { MockConsumeService } from 'src/app/Services/mock-consume.service';
 })
 export class ListMenuItemsComponent implements OnInit{
 
-  menuItems: any[] = [];
-
+  
   constructor(private mockService: MockConsumeService) { }
+  filterList = '';
+  listMenu: any[] = [];
 
   ngOnInit() {
 
-    this.mockService.getDataUsers()
+    this.mockService.getMenuOptions()
     .subscribe( (resp:any) => {
       // this.progressBar = false;
-      this.menuItems = resp;
-      console.log('DATA: ', resp);
+      this.listMenu = resp;
+      console.log('listMenu Resp: ', this.listMenu);
       
     });
   }

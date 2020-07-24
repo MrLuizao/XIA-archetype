@@ -1,9 +1,13 @@
 
-  <mat-nav-list>
 
-    <mat-list-item *ngFor="let link of menuItems" class="menu-items" 
+  <mat-nav-list>
+      <mat-form-field >
+        <input matInput placeholder="Buscar..." name="filterList" [(ngModel)]="filterList">       
+      </mat-form-field>
+
+    <mat-list-item *ngFor="let link of listMenu | listSearch: filterList" class="menu-items" 
     [routerLink]="link.redirect">
-      {{ link.company.name }}
+      {{ link.name }}
     </mat-list-item>
 
  </mat-nav-list>

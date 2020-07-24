@@ -29,4 +29,8 @@ export class MockConsumeService {
     
   }
 
+  getWarehouseList(){
+    return this._http.get('assets/data/warehouse.json');
+  }
+
 }

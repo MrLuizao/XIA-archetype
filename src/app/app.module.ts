@@ -48,6 +48,7 @@ import { TableUsersComponent } from './Components/table-users/table-users.compon
 import { CardMenuDashboardComponent } from './Components/card-menu-dashboard/card-menu-dashboard.component';
 import { NavBarDashboardComponent } from './Components/nav-bar-dashboard/nav-bar-dashboard.component';
 import { NavAllAppComponent } from './Components/nav-all-app/nav-all-app.component';
+import { ListSearchPipe } from './Pipes/list-search.pipe';
 
 
 export const MATERIAL_COMPONENTS = [
@@ -91,7 +92,8 @@ export const MATERIAL_COMPONENTS = [
     TableUsersComponent,
     CardMenuDashboardComponent,
     NavBarDashboardComponent,
-    NavAllAppComponent
+    NavAllAppComponent,
+    ListSearchPipe
   ],
   imports: [
     BrowserModule,
