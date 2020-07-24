@@ -8,10 +8,8 @@ import { ConsumeService } from 'src/app/Services/consume.service';
 })
 export class ProveedorComponent implements OnInit {
 
-
   constructor( private service: ConsumeService ) { }
-
-   
+ 
   ngOnInit() {
 
   }

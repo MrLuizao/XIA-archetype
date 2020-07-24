@@ -21,7 +21,8 @@ import {
   MatDatepickerModule,
   MatNativeDateModule,
   MatRadioModule,
-  MatAutocompleteModule
+  MatAutocompleteModule,
+  MatCheckboxModule
   } from '@angular/material';
 
 import { MatSidenavModule } from '@angular/material/sidenav';
@@ -73,7 +74,8 @@ export const MATERIAL_COMPONENTS = [
   MatDatepickerModule,
   MatNativeDateModule,
   MatRadioModule, 
-  MatAutocompleteModule
+  MatAutocompleteModule,
+  MatCheckboxModule
 ]
 
 @NgModule({

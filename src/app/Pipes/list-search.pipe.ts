@@ -12,11 +12,9 @@ export class ListSearchPipe implements PipeTransform {
 
       if(item.name.indexOf(args) > -1){
 
-        console.log('entra aqui cada vez que escribo');
-
         foundListItem.push(item);
       }     
-      
+
     }
 
     return foundListItem;
