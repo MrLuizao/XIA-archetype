@@ -47,6 +47,7 @@ import { CardsHomeComponent } from './Components/cards-home/cards-home.component
 import { TableUsersComponent } from './Components/table-users/table-users.component';
 import { CardMenuDashboardComponent } from './Components/card-menu-dashboard/card-menu-dashboard.component';
 import { NavBarDashboardComponent } from './Components/nav-bar-dashboard/nav-bar-dashboard.component';
+import { NavAllAppComponent } from './Components/nav-all-app/nav-all-app.component';
 
 
 export const MATERIAL_COMPONENTS = [
@@ -89,7 +90,8 @@ export const MATERIAL_COMPONENTS = [
     CardsHomeComponent,
     TableUsersComponent,
     CardMenuDashboardComponent,
-    NavBarDashboardComponent
+    NavBarDashboardComponent,
+    NavAllAppComponent
   ],
   imports: [
     BrowserModule,

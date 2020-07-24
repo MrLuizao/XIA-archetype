@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Location } from '@angular/common';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-nav-bar-dashboard',
@@ -8,13 +9,20 @@ import { Location } from '@angular/common';
 })
 export class NavBarDashboardComponent implements OnInit {
 
-  constructor( private location: Location ) { }
+  public params;
+
+  constructor( private location: Location, private route: ActivatedRoute) { }
 
   ngOnInit() {
+    this.params = this.route.snapshot.fragment; 
+    console.log('así llega public params en NavBarDashboardComponent', this.params);
+
   }
 
   backToLastPage(){
     this.location.back();    
   }
+
+
 
 }
