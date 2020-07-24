@@ -8,19 +8,12 @@ import { ConsumeService } from 'src/app/Services/consume.service';
 })
 export class ProveedorComponent implements OnInit {
 
-  // dataService: any[] = [];
 
   constructor( private service: ConsumeService ) { }
 
    
   ngOnInit() {
 
-    // this.mockService.getDataDummy()
-    //   .subscribe( (resp:any) => {
-    //     this.dataService = resp;
-    //     console.log('DATA: ', resp);
-        
-    //   });
   }
 
 }

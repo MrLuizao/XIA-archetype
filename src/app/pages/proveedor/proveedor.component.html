@@ -1,11 +1,28 @@
 
+<app-nav-all-app></app-nav-all-app>
 
-<mat-drawer-container class="example-container">
-   
-    <app-nav-all-app></app-nav-all-app>
+<!-- <mat-drawer-container class="example-container" autosize>
 
-    <div class="wrap-contain">            
-        <app-table-users ></app-table-users>
+    <div class="col-md-12">
+        <div class="col-md-2 " style="display: inline-block">
+            <app-list-menu-items ></app-list-menu-items>
+        </div>
+        <div class="col-md-10" style="display: inline-block">
+            <app-table-users ></app-table-users>
+        </div>
     </div>
 
+</mat-drawer-container> -->
+
+<mat-drawer-container class="example-container" autosize>
+    <mat-drawer #drawer class="example-sidenav" mode="side" opened>
+
+      <app-list-menu-items></app-list-menu-items>
+
+    </mat-drawer>
+
+    <app-table-users ></app-table-users>
+    <!-- <app-cards-home></app-cards-home> -->
+
 </mat-drawer-container>
+  

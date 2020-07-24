@@ -15,7 +15,7 @@
         "image": "add_business",
         "color": "blue",
         "name": "Compras",
-        "redirect": "/proveedor",
+        "redirect": "/compras",
 
         "submenu": [
             {
@@ -76,7 +76,7 @@
         "image": "point_of_sale",
         "color": "pink",
         "name": "Caja",
-        "redirect": "/proveedor",
+        "redirect": "/compras",
 
         "submenu": [
             {
@@ -105,7 +105,7 @@
         "image": "fact_check",
         "color": "purple",
         "name": "Facturación",
-        "redirect": "/proveedor",
+        "redirect": "/compras",
 
         "submenu": [
             {
@@ -165,7 +165,7 @@
         "image": "account_balance",
         "color": "orange",
         "name": "Contabilidad",
-        "redirect": "/proveedor",
+        "redirect": "/compras",
 
         "submenu": [
             {
@@ -226,7 +226,7 @@
         "color": "white",
 
         "name": "POS",
-        "redirect": "/proveedor",
+        "redirect": "/compras",
 
         "submenu": [
             {
@@ -288,7 +288,7 @@
         "color": "cyan",
 
         "name": "Reportes",
-        "redirect": "/proveedor",
+        "redirect": "/compras",
 
         "submenu": [
             {
