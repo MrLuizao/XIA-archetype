@@ -3,19 +3,22 @@
 
     <mat-drawer #drawer class="example-sidenav" mode="side" opened>
         <span >
-            <button mat-menu-item (click)="dialogConfirmClose()" class="mb-3">
+            <button mat-flat-button color="primary" class="fill-size mb-3 mt-5"
+            (click)="createWarehouse()">
                 <mat-icon>add_box</mat-icon>
-                <span>Crear Almacén</span>
+                &nbsp;
+                <span>Crear almacén</span>
             </button>
         </span>
       <mat-nav-list>
-        <mat-form-field class="mb-3">
-          <input matInput placeholder="Buscar..." name="filterList" [(ngModel)]="filterList">       
+        <mat-form-field class="fill-size">
+          <input matInput placeholder="Buscar por nombre..." name="filterList" [(ngModel)]="filterList">       
         </mat-form-field>
         <!-- [routerLink]="link.redirect" -->
-      <mat-list-item class="menu-items" (click)="viewTableById(link.id)"
+      <mat-list-item class="menu-items mt-3" (click)="viewTableById(link.id)"
         *ngFor="let link of listMenu | listSearch: filterList" >
         {{ link.company.name }}
+        <mat-divider></mat-divider>
       </mat-list-item>
   
     </mat-nav-list>
@@ -27,15 +30,17 @@
         <span class="example-spacer"></span>
 
         <span>
-            <button mat-menu-item (click)="dialogConfirmClose()">
+            <button mat-stroked-button (click)="editWarehouse()">
                 <mat-icon>edit</mat-icon>
-                <span>Editar Almacén</span>
+                &nbsp;
+                <span>Editar almacén</span>
             </button>
         </span>
         &nbsp;&nbsp;&nbsp;
         <span>
-            <button mat-menu-item (click)="dialogConfirmClose()">
+            <button mat-stroked-button color="warn" (click)="deleteWarehouse()">
                 <mat-icon>delete_forever</mat-icon>
+                &nbsp;
                 <span>Borrar almacén</span>
             </button>
         </span>

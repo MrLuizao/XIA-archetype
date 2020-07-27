@@ -51,6 +51,9 @@ import { NavBarDashboardComponent } from './Components/nav-bar-dashboard/nav-bar
 import { NavAllAppComponent } from './Components/nav-all-app/nav-all-app.component';
 import { ListSearchPipe } from './Pipes/list-search.pipe';
 import { WarehouseItemsComponent } from './Components/warehouse-items/warehouse-items.component';
+import { CreateWarehouseComponent } from './dialogs/create-warehouse/create-warehouse.component';
+import { DeleteWarehouseComponent } from './dialogs/delete-warehouse/delete-warehouse.component';
+import { EditWarehouseComponent } from './dialogs/edit-warehouse/edit-warehouse.component';
 
 
 export const MATERIAL_COMPONENTS = [
@@ -97,7 +100,10 @@ export const MATERIAL_COMPONENTS = [
     NavBarDashboardComponent,
     NavAllAppComponent,
     ListSearchPipe,
-    WarehouseItemsComponent
+    WarehouseItemsComponent,
+    CreateWarehouseComponent,
+    DeleteWarehouseComponent,
+    EditWarehouseComponent
   ],
   imports: [
     BrowserModule,
@@ -123,7 +129,10 @@ export const MATERIAL_COMPONENTS = [
   entryComponents: [
     LoginModalComponent,
     RegistryModalComponent,
-    ConfirmCloseComponent
+    ConfirmCloseComponent,
+    CreateWarehouseComponent,
+    DeleteWarehouseComponent,
+    EditWarehouseComponent
  ],
   providers: [],
   bootstrap: [AppComponent]
