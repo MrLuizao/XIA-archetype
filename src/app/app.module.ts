@@ -50,6 +50,7 @@ import { CardMenuDashboardComponent } from './Components/card-menu-dashboard/car
 import { NavBarDashboardComponent } from './Components/nav-bar-dashboard/nav-bar-dashboard.component';
 import { NavAllAppComponent } from './Components/nav-all-app/nav-all-app.component';
 import { ListSearchPipe } from './Pipes/list-search.pipe';
+import { WarehouseItemsComponent } from './Components/warehouse-items/warehouse-items.component';
 
 
 export const MATERIAL_COMPONENTS = [
@@ -95,7 +96,8 @@ export const MATERIAL_COMPONENTS = [
     CardMenuDashboardComponent,
     NavBarDashboardComponent,
     NavAllAppComponent,
-    ListSearchPipe
+    ListSearchPipe,
+    WarehouseItemsComponent
   ],
   imports: [
     BrowserModule,

@@ -1,4 +1,4 @@
-import { Component, OnInit} from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 import { ConsumeService } from 'src/app/Services/consume.service';
 
 @Component({
