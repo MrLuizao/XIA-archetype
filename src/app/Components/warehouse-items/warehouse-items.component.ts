@@ -15,7 +15,6 @@ export class WarehouseItemsComponent implements OnInit {
 
   filterList = '';
   listMenu: any[] = [];
-  id: any;
   tableSelect: any[] = [];
 
   displayedColumns: string[] = ['key', 'code', 'description', 'type', 'ubication'];

@@ -1,1 +1,74 @@
-<p>create-warehouse works!</p>
+<div style="margin: 1rem;">
+
+    <form (ngSubmit)="submitSaveWarehose(dataForm)" 
+    #dataForm="ngForm">
+
+    <div mat-dialog-content>
+        <p>
+            <mat-form-field >
+                <mat-label>Código ERP</mat-label>
+
+                    <input  matInput 
+                            placeholder="Código ERP" 
+                            name="code"
+                            [(ngModel)]="wareHouse.code"
+                            required>
+
+                    <mat-icon matSuffix>qr_codee</mat-icon>
+                    
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field >
+                <mat-label>Descripción</mat-label>
+
+                    <input  matInput 
+                            placeholder="Descripción" 
+                            name="description"
+                            [(ngModel)]="wareHouse.description"
+                            required>
+
+                    <mat-icon matSuffix>list_alt</mat-icon>
+                    
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field >
+                <mat-label>Tipo de almacén</mat-label>
+
+                    <input  matInput 
+                            placeholder="Tipo de almacén" 
+                            name="type"
+                            [(ngModel)]="wareHouse.type"
+                            required>
+
+                    <mat-icon matSuffix>domain</mat-icon>
+                    
+            </mat-form-field>
+        </p>
+        <p>
+            <mat-form-field >
+                <mat-label>Ubicación</mat-label>
+
+                    <input  matInput 
+                            placeholder="Ubicación"
+                            name="location"
+                            [(ngModel)]="wareHouse.location"
+                            required>
+
+                    <mat-icon matSuffix>place</mat-icon>
+                    
+            </mat-form-field>
+        </p>
+    </div>
+
+    <mat-dialog-actions align="center" >
+        <button mat-button mat-dialog-close>Cancelar</button>
+        <button mat-button cdkFocusInitial type="submit">Guardar</button>
+    </mat-dialog-actions>
+
+    </form>
+
+</div>
+
+  
