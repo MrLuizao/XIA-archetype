@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { WarehouseModel } from 'src/app/Models/warehouse.model';
-import { FormControl, Validators, NgForm } from '@angular/forms';
+import { NgForm } from '@angular/forms';
+import { ConsumeService } from 'src/app/Services/consume.service';
+import { MatDialogRef, MatSnackBar } from '@angular/material';
+import { ErrorResponseComponent } from 'src/app/snack-alerts/error-response/error-response.component';
 
 @Component({
   selector: 'app-create-warehouse',
@@ -9,10 +12,14 @@ import { FormControl, Validators, NgForm } from '@angular/forms';
 })
 export class CreateWarehouseComponent implements OnInit {
 
+  loadSpinner= false;
   wareHouse:WarehouseModel;
+  loadingClass = false;
 
 
-  constructor() { }
+  constructor( private httpservice: ConsumeService, 
+    public dialogRef: MatDialogRef<CreateWarehouseComponent>, 
+    private _snackBar: MatSnackBar) { }
 
   ngOnInit() {
     this.wareHouse = new WarehouseModel();
@@ -24,14 +31,44 @@ export class CreateWarehouseComponent implements OnInit {
 
   }
 
+  openSnackBar() {
+    console.log('se abre snackbar');
+    
+    this._snackBar.openFromComponent(ErrorResponseComponent, {
+      duration: 2000,
+    });
+  }
+
+
   submitSaveWarehose( form: NgForm ){
 
     if( form.invalid ){
       return;
     }
+    
+    this.loadSpinner = true;
+
     console.log('datos capturados en warehouse form', this.wareHouse);
     console.log(form);
 
+    this.httpservice.postCreateWarehouse( this.wareHouse )
+    .subscribe( resp => {
+
+      if(resp['response'] === true ){
+
+      }else{
+
+        alert('Aqui devolver un snackbar')
+      }
+    }, (err) => {
+
+      this.dialogRef.close(false);
+      this.openSnackBar();
+      
+    });
+
+
   }
+  
 
 }

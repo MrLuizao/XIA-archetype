@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { MatTableDataSource, MatDialog } from '@angular/material';
+import { MatTableDataSource, MatDialog, MatSnackBar } from '@angular/material';
 import { SelectionModel } from '@angular/cdk/collections';
 import { MockConsumeService } from 'src/app/Services/mock-consume.service';
 import { CreateWarehouseComponent } from 'src/app/dialogs/create-warehouse/create-warehouse.component';
@@ -12,6 +12,8 @@ import { DeleteWarehouseComponent } from 'src/app/dialogs/delete-warehouse/delet
   styleUrls: ['./warehouse-items.component.scss']
 })
 export class WarehouseItemsComponent implements OnInit {
+
+  loadSpinner: boolean;
 
   filterList = '';
   listMenu: any[] = [];
@@ -68,10 +70,12 @@ export class WarehouseItemsComponent implements OnInit {
   }
 
   createWarehouse(){
+
     const dialogRef = this.dialog.open(CreateWarehouseComponent);
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
+
     })
   }
 
