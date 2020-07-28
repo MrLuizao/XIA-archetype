@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 import { MatTableDataSource, MatDialog, MatSnackBar } from '@angular/material';
 import { SelectionModel } from '@angular/cdk/collections';
 import { MockConsumeService } from 'src/app/Services/mock-consume.service';
@@ -14,11 +14,13 @@ import { SnackAlertsService } from 'src/app/Services/snack-alerts.service';
 })
 export class WarehouseItemsComponent implements OnInit {
 
-  loadSpinner: boolean;
+  @Output() sendData= new EventEmitter<any>();
+  
+  tableSelect: any[] = [];
 
+  loadSpinner: boolean;
   filterList = '';
   listMenu: any[] = [];
-  tableSelect: any[] = [];
 
   displayedColumns: string[] = ['key', 'code', 'description', 'type', 'ubication'];
   dataSource = new MatTableDataSource<any>(this.tableSelect);
@@ -82,19 +84,19 @@ export class WarehouseItemsComponent implements OnInit {
     })
   }
 
-  deleteWarehouse(tableSelect){
+  deleteWarehouse(){
 
-    console.log('parametro que llega con deleteWarehouse', tableSelect);
-
-    if (tableSelect.length == 0){
+    if (this.tableSelect.length == 0){
       this.snackService.invalidSnack();
       return
     }
 
+    this.sendData.emit(this.tableSelect)
+    console.log('esto se manda con el emitter', this.tableSelect);
+
+
     const dialogRef = this.dialog.open(DeleteWarehouseComponent);
 
-    this.tableSelect;
-    
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
     })

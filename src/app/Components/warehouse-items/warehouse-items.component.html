@@ -16,7 +16,7 @@
             <input matInput placeholder="Buscar por nombre..." name="filterList" [(ngModel)]="filterList">       
             </mat-form-field>
             <!-- [routerLink]="link.redirect" -->
-            <mat-list-item class="menu-items mt-3" (click)="viewTableById(link.id)"
+            <mat-list-item class="menu-items mt-3" (click)="viewTableById(link.id)"  
                 *ngFor="let link of listMenu | listSearch: filterList" >
                 {{ link.company.name }}
                 <mat-divider></mat-divider>
@@ -25,7 +25,7 @@
         </mat-nav-list>
     </mat-drawer>
 
-    <mat-toolbar class="mat-elevation-z1">
+    <mat-toolbar class="mat-elevation-z1" >
         <span>Almacén</span>
         <span class="example-spacer"></span>
 
@@ -51,7 +51,7 @@
         <h3 mat-subheader>Código ERP</h3>
         <mat-list-item >
           <mat-icon mat-list-icon>qr_code</mat-icon>          
-          <h4 mat-line>{{tableSelect.phone}}</h4>
+          <h4 mat-line >{{tableSelect.phone}}</h4>
         </mat-list-item>
         <mat-divider></mat-divider>
 
