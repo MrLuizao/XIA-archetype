@@ -2,8 +2,8 @@ import { Component, OnInit } from '@angular/core';
 import { WarehouseModel } from 'src/app/Models/warehouse.model';
 import { NgForm } from '@angular/forms';
 import { ConsumeService } from 'src/app/Services/consume.service';
-import { MatDialogRef, MatSnackBar } from '@angular/material';
-import { ErrorResponseComponent } from 'src/app/snack-alerts/error-response/error-response.component';
+import { MatDialogRef } from '@angular/material';
+import { SnackAlertsService } from 'src/app/Services/snack-alerts.service';
 
 @Component({
   selector: 'app-create-warehouse',
@@ -19,7 +19,7 @@ export class CreateWarehouseComponent implements OnInit {
 
   constructor( private httpservice: ConsumeService, 
     public dialogRef: MatDialogRef<CreateWarehouseComponent>, 
-    private _snackBar: MatSnackBar) { }
+    public snackService: SnackAlertsService) { }
 
   ngOnInit() {
     this.wareHouse = new WarehouseModel();
@@ -31,14 +31,6 @@ export class CreateWarehouseComponent implements OnInit {
 
   }
 
-  openSnackBar() {
-    console.log('se abre snackbar');
-    
-    this._snackBar.openFromComponent(ErrorResponseComponent, {
-      duration: 2000,
-    });
-  }
-
 
   submitSaveWarehose( form: NgForm ){
 
@@ -48,7 +40,6 @@ export class CreateWarehouseComponent implements OnInit {
     
     this.loadSpinner = true;
 
-    console.log('datos capturados en warehouse form', this.wareHouse);
     console.log(form);
 
     this.httpservice.postCreateWarehouse( this.wareHouse )
@@ -63,8 +54,7 @@ export class CreateWarehouseComponent implements OnInit {
     }, (err) => {
 
       this.dialogRef.close(false);
-      this.openSnackBar();
-      
+      this.snackService.errorSnack();      
     });
 
 

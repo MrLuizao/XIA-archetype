@@ -55,6 +55,7 @@ import { CreateWarehouseComponent } from './dialogs/create-warehouse/create-ware
 import { DeleteWarehouseComponent } from './dialogs/delete-warehouse/delete-warehouse.component';
 import { EditWarehouseComponent } from './dialogs/edit-warehouse/edit-warehouse.component';
 import { ErrorResponseComponent } from './snack-alerts/error-response/error-response.component';
+import { InvalidSelectComponent } from './snack-alerts/invalid-select/invalid-select.component';
 
 
 export const MATERIAL_COMPONENTS = [
@@ -105,7 +106,8 @@ export const MATERIAL_COMPONENTS = [
     CreateWarehouseComponent,
     DeleteWarehouseComponent,
     EditWarehouseComponent,
-    ErrorResponseComponent
+    ErrorResponseComponent,
+    InvalidSelectComponent
   ],
   imports: [
     BrowserModule,
@@ -135,7 +137,8 @@ export const MATERIAL_COMPONENTS = [
     CreateWarehouseComponent,
     DeleteWarehouseComponent,
     EditWarehouseComponent,
-    ErrorResponseComponent
+    ErrorResponseComponent,
+    InvalidSelectComponent
  ],
   providers: [],
   bootstrap: [AppComponent]

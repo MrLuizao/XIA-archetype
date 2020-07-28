@@ -5,6 +5,7 @@ import { MockConsumeService } from 'src/app/Services/mock-consume.service';
 import { CreateWarehouseComponent } from 'src/app/dialogs/create-warehouse/create-warehouse.component';
 import { EditWarehouseComponent } from 'src/app/dialogs/edit-warehouse/edit-warehouse.component';
 import { DeleteWarehouseComponent } from 'src/app/dialogs/delete-warehouse/delete-warehouse.component';
+import { SnackAlertsService } from 'src/app/Services/snack-alerts.service';
 
 @Component({
   selector: 'app-warehouse-items',
@@ -41,7 +42,9 @@ export class WarehouseItemsComponent implements OnInit {
     }
     return `${this.selection.isSelected(row) ? 'deselect' : 'select'} row ${row.position + 1}`;
   }
-  constructor( private mockService: MockConsumeService, public dialog: MatDialog) { }
+  constructor( private mockService: MockConsumeService, 
+               public dialog: MatDialog, 
+               public snackService: SnackAlertsService) { }
 
   ngOnInit() {
     this.mockService.getDataUsers()
@@ -79,20 +82,31 @@ export class WarehouseItemsComponent implements OnInit {
     })
   }
 
-  editWarehouse(){
+  deleteWarehouse(tableSelect){
+
+    console.log('parametro que llega con deleteWarehouse', tableSelect);
+
+    if (tableSelect.length == 0){
+      this.snackService.invalidSnack();
+      return
+    }
+
     const dialogRef = this.dialog.open(DeleteWarehouseComponent);
 
+    this.tableSelect;
+    
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
     })
   }
 
-  deleteWarehouse(){
+  editWarehouse(){
     const dialogRef = this.dialog.open(EditWarehouseComponent);
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
     })
   }
+
 
 }
