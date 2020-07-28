@@ -1,4 +1,5 @@
-import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, Input, ViewChild, ElementRef, Inject } from '@angular/core';
+import { MAT_DIALOG_DATA } from '@angular/material';
 
 @Component({
   selector: 'app-delete-warehouse',
@@ -9,14 +10,15 @@ import { Component, OnInit, Input, ViewChild, ElementRef } from '@angular/core';
 export class DeleteWarehouseComponent implements OnInit {
   
   // @ViewChild('sharedWarehouse', {static: false}) sharedWarehouse: any;
-  @Input() tableSelect: any;
+  // @Input() tableSelect: any;
+  recivedData: any;
   
-  
-  constructor() { }
+  constructor( @Inject(MAT_DIALOG_DATA) public data: any) { 
+    this.recivedData = data;
+  }
 
   ngOnInit() {
-    console.log(this.tableSelect);
-    // console.log('llega con el input al dilog', this.sharedWarehouse);
+    console.log('esto llega con el injector', this.recivedData);
     
   }
 

@@ -24,10 +24,10 @@ export class CreateWarehouseComponent implements OnInit {
   ngOnInit() {
     this.wareHouse = new WarehouseModel();
     console.log('Modelo en el dialog', this.wareHouse)
-    this.wareHouse.code = '';
-    this.wareHouse.description = '';
-    this.wareHouse.type = '';
-    this.wareHouse.location = '';
+    // this.wareHouse.code = '';
+    // this.wareHouse.description = '';
+    // this.wareHouse.type = '';
+    // this.wareHouse.location = '';
 
   }
 

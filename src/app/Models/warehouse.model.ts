@@ -5,4 +5,8 @@ export class WarehouseModel{
     description : string;
     type : string;
     location : string;
+    phone: string;
+    name: string;
+    website: string;
+    username: string;
 }

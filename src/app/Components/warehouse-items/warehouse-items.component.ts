@@ -76,7 +76,9 @@ export class WarehouseItemsComponent implements OnInit {
 
   createWarehouse(){
 
-    const dialogRef = this.dialog.open(CreateWarehouseComponent);
+    const dialogRef = this.dialog.open(CreateWarehouseComponent, {
+      // width: '50%'
+    });
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
@@ -91,11 +93,10 @@ export class WarehouseItemsComponent implements OnInit {
       return
     }
 
-    this.sendData.emit(this.tableSelect)
-    console.log('esto se manda con el emitter', this.tableSelect);
+    const dialogRef = this.dialog.open(DeleteWarehouseComponent, {
+      data: this.tableSelect
+    });
 
-
-    const dialogRef = this.dialog.open(DeleteWarehouseComponent);
 
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
@@ -103,8 +104,17 @@ export class WarehouseItemsComponent implements OnInit {
   }
 
   editWarehouse(){
-    const dialogRef = this.dialog.open(EditWarehouseComponent);
 
+    if (this.tableSelect.length == 0){
+      this.snackService.invalidSnack();
+      return
+    }
+
+    const dialogRef = this.dialog.open(EditWarehouseComponent, {
+      data: this.tableSelect
+    });
+
+    
     dialogRef.afterClosed().subscribe(result => {
       console.log(`Dialog result: ${result}`);
     })
