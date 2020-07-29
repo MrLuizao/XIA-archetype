@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter, ChangeDetectorRef } from '@angular/core';
 import { MatTableDataSource, MatDialog, MatSnackBar } from '@angular/material';
 import { SelectionModel } from '@angular/cdk/collections';
 import { MockConsumeService } from 'src/app/Services/mock-consume.service';
@@ -6,6 +6,7 @@ import { CreateWarehouseComponent } from 'src/app/dialogs/create-warehouse/creat
 import { EditWarehouseComponent } from 'src/app/dialogs/edit-warehouse/edit-warehouse.component';
 import { DeleteWarehouseComponent } from 'src/app/dialogs/delete-warehouse/delete-warehouse.component';
 import { SnackAlertsService } from 'src/app/Services/snack-alerts.service';
+
 
 @Component({
   selector: 'app-warehouse-items',
@@ -15,7 +16,7 @@ import { SnackAlertsService } from 'src/app/Services/snack-alerts.service';
 export class WarehouseItemsComponent implements OnInit {
 
   @Output() sendData= new EventEmitter<any>();
-  
+
   tableSelect: any[] = [];
 
   loadSpinner: boolean;
@@ -119,6 +120,5 @@ export class WarehouseItemsComponent implements OnInit {
       console.log(`Dialog result: ${result}`);
     })
   }
-
 
 }

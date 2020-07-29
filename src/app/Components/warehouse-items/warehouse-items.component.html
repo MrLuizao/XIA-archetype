@@ -1,9 +1,9 @@
 
- <mat-drawer-container class="example-container" autosize>
+<mat-drawer-container class="example-container" >
 
-    <mat-drawer #drawer class="example-sidenav" mode="side" opened>
-        <span >
-            <button mat-flat-button color="accent" class="fill-size mb-3" style="min-width: 20rem; margin-top: 1rem;"
+    <mat-drawer #drawer class="example-sidenav" mode="side" opened id="mobile-menu">
+        <span>
+            <button mat-flat-button color="accent" class="fill-size mb-3" style="min-width: 20rem;"
             (click)="createWarehouse()">
                 <mat-icon>add_box</mat-icon>
                 &nbsp;
@@ -12,74 +12,87 @@
         </span>
         <mat-nav-list>
 
-            <mat-form-field class="fill-size">
-            <input matInput placeholder="Buscar por nombre..." name="filterList" [(ngModel)]="filterList">       
+            <mat-form-field class="fill-size mb-5">
+                <input matInput placeholder="Buscar por nombre..." name="filterList" [(ngModel)]="filterList">       
             </mat-form-field>
-            <!-- [routerLink]="link.redirect" -->
-            <mat-list-item class="menu-items mt-3" (click)="viewTableById(link.id)"  
-                *ngFor="let link of listMenu | listSearch: filterList" >
-                {{ link.company.name }}
-                <mat-divider></mat-divider>
-            </mat-list-item>
-  
+
+            <mat-accordion>
+                <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" 
+                *ngFor="let link of listMenu | listSearch: filterList" (click)="viewTableById(link.id)" class="fill-size">
+                    <mat-expansion-panel-header >
+                    <mat-panel-description>
+                        {{ link.company.name }}
+                    </mat-panel-description>
+                    </mat-expansion-panel-header>
+                    <div style="text-align: center" >
+                    <button mat-button (click)="deleteWarehouse(tableSelect)">
+                        <mat-icon>delete_forever</mat-icon>
+                    </button>
+                    <button mat-button (click)="editWarehouse()">
+                        <mat-icon>edit</mat-icon>
+                    </button>
+                    </div>
+                </mat-expansion-panel>
+            </mat-accordion>
+    
         </mat-nav-list>
     </mat-drawer>
 
-    <mat-toolbar class="mat-elevation-z1" color="primary">
-        <span>Almacén</span>
+    <mat-toolbar class="mat-elevation-z1" color="primary" style="height: 5rem;" class="web-only">
+
+        <!-- <button mat-button style="margin-left: -1rem;" (click)="drawer.toggle()" >
+            <mat-icon>menu</mat-icon>
+        </button> -->
+    
+        <span style="margin-top: 1px;">Almacén</span>
+
         <span class="example-spacer"></span>
 
         <span>
-            <button mat-stroked-button (click)="editWarehouse()">
+            <button mat-button (click)="editWarehouse()">
                 <mat-icon>edit</mat-icon>
-                &nbsp;
-                <span>Editar almacén</span>
             </button>
         </span>
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <button mat-stroked-button (click)="deleteWarehouse(tableSelect)">
+        <span >
+            <button mat-button (click)="deleteWarehouse(tableSelect)" class="web-only">
                 <mat-icon>delete_forever</mat-icon>
-                &nbsp;
-                <span>Borrar almacén</span>
             </button>
         </span>
-
     </mat-toolbar>
     
-    <mat-list class="warehouse-items" >
+    <mat-list class="warehouse-items" class="web-only" st>
         <h3 mat-subheader>Código ERP</h3>
         <mat-list-item >
-          <mat-icon mat-list-icon>qr_code</mat-icon>          
-          <h4 mat-line >{{tableSelect.phone}}</h4>
+            <mat-icon mat-list-icon>qr_code</mat-icon>          
+            <h1 mat-line >{{tableSelect.phone}}</h1>
         </mat-list-item>
         <mat-divider></mat-divider>
 
         <h3 mat-subheader>Descripción</h3>
         <mat-list-item >
-          <mat-icon mat-list-icon>list_alt</mat-icon>
-          <h4 mat-line>{{tableSelect.name}}</h4>
+            <mat-icon mat-list-icon>list_alt</mat-icon>
+            <h1 mat-line>{{tableSelect.name}}</h1>
         </mat-list-item>
         <mat-divider></mat-divider>
 
         <h3 mat-subheader>Tipo de almacén</h3>
         <mat-list-item >
-          <mat-icon mat-list-icon> domain</mat-icon>
-          <h4 mat-line>{{tableSelect.website}}</h4>
+            <mat-icon mat-list-icon> domain</mat-icon>
+            <h1 mat-line>{{tableSelect.website}}</h1>
         </mat-list-item>
         <mat-divider></mat-divider>
 
         <h3 mat-subheader>Ubicación</h3>
         <mat-list-item >
-          <mat-icon mat-list-icon>place</mat-icon>
-          <h4 mat-line>{{tableSelect.username}}</h4>
+            <mat-icon mat-list-icon>place</mat-icon>
+            <h1 mat-line>{{tableSelect.username}}</h1>
         </mat-list-item>
         <mat-divider></mat-divider>
 
         <h3 mat-subheader>Clave de almacén</h3>
         <mat-list-item >
-          <mat-icon mat-list-icon>vpn_key</mat-icon>
-          <h4 mat-line>{{tableSelect.id}}</h4>
+            <mat-icon mat-list-icon>vpn_key</mat-icon>
+            <h1 mat-line>{{tableSelect.id}}</h1>
         </mat-list-item>
         <mat-divider></mat-divider>
     </mat-list>

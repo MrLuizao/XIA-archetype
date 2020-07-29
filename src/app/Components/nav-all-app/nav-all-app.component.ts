@@ -14,11 +14,9 @@ export class NavAllAppComponent implements OnInit {
   }
 
   goToDashboard(params){
-
     
     this.router.navigateByUrl('dashboard', params)
     console.log('llega con el click desde nav-all', params);
-
 
   }
 }

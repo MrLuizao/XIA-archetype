@@ -1,7 +1,19 @@
 
-
-.warehouse-items {
-    width: 80%;
-    margin-left: 10%;
-    margin-top: 10%;
+@media screen and (max-width: 800px){
+    .web-only{
+        display: none;
+    }
 }
+@media screen and (min-width: 800px){
+    .mobile-only{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 800px){
+
+    #mobile-menu{
+        width: 100% !important;
+    }
+}
+
