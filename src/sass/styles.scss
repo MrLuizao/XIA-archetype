@@ -1,10 +1,8 @@
 @import "~bootstrap/dist/css/bootstrap.css";
-@import '~@sweetalert2/theme-material-ui/material-ui.scss';
+
+@import '../styles/theme-custom.scss';
+@import '../styles/global-custom.scss';
 
 @import '../sass/variables';
 @import '../sass/mixins';
-
-@import '../styles/sweet-alert-custom.scss';
-@import '../styles/toast-alert-custom.scss';
-@import '../styles/global-custom.scss';
 

@@ -5,17 +5,16 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif;}
 body > app-root > app-dashboard > mat-drawer-container > mat-drawer-content > div > app-nav-bar-dashboard > mat-toolbar > button > span > mat-icon,
 body > app-root > app-proveedor > app-nav-all-app > mat-toolbar > button > span > mat-icon
 {
-  font-size: xxx-large !important;
+  font-size: xx-large !important;
 }
 
 .bgc-element{
-  // background-image:url("src/assets/images/log-image.jpg");
   background-image:url("https://cdn.statically.io/img/www.itl.cat/pngfile/big/212-2125505_3840-x-material-design-light-gray.jpg");
   background-size: cover;
   background-position: right bottom;
   -webkit-filter: brightness(90%);    
   filter: brightness(90%);
-  
+  // background-color: #e65100;
 }
 
 .example-card {

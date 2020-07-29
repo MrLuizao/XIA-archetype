@@ -1,14 +1,14 @@
-<div class="all-layer-cards body-cards" >
-    <div class="container" >
+
+<div class="all-layer-cards body-cards">
+    <div class="container">
 
         <div class="box" 
             *ngFor="let item of menuItems;"[routerLink]="item.redirect">
-            <div class="content">
-                <mat-icon >{{item.image}}</mat-icon>
+            <div class="content" >
+                <mat-icon>{{item.image}}</mat-icon>
                 <h4>{{item.name}}</h4>  
             </div>
         </div>
 
     </div>
-
 </div>
