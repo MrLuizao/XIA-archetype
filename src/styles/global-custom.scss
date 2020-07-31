@@ -9,12 +9,12 @@ body > app-root > app-proveedor > app-nav-all-app > mat-toolbar > button > span 
 }
 
 .bgc-element{
-  background-image:url("https://cdn.statically.io/img/www.itl.cat/pngfile/big/212-2125505_3840-x-material-design-light-gray.jpg");
+  // background-image:url("https://cdn.statically.io/img/www.itl.cat/pngfile/big/212-2125505_3840-x-material-design-light-gray.jpg");
+  background-image:url("../assets/images/bg-login.jpg");
   background-size: cover;
   background-position: right bottom;
   -webkit-filter: brightness(90%);    
   filter: brightness(90%);
-  // background-color: #e65100;
 }
 
 .example-card {
@@ -111,15 +111,30 @@ button:focus{
   margin-top: 25%;
 }
 
-
-body > div.swal2-container.swal2-center.swal2-backdrop-show > div > div.swal2-actions > button.swal2-confirm.swal2-styled{
-  margin-right: 3rem;
-}
-
-button.swal2-cancel.swal2-styled {
-  margin-right: 15%;
-}
-
 .margin-1{
   margin: 1rem;
+}
+
+.separate-r{
+  margin-right: 1rem;
+}
+
+.link-text{
+  cursor: pointer;
+}
+
+.text-accent-color{
+  color: #212121;
+}
+
+.text-primary-color{
+  color: #757575;
+}
+
+#edit-span:hover{
+  color: #212121;
+}
+
+#delete-span:hover{
+  color: #212121;
 }

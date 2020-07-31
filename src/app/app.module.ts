@@ -37,7 +37,6 @@ import { AppComponent } from './app.component';
 import { ProveedorComponent } from './pages/proveedor/proveedor.component';
 import { ComprasComponent } from './pages/compras/compras.component';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { ListMenuItemsComponent } from './Components/list-menu-items/list-menu-items.component';
 import { LoginModalComponent } from './dialogs/login-modal/login-modal.component';
 import { RegistryModalComponent } from './dialogs/registry-modal/registry-modal.component';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
@@ -91,7 +90,6 @@ export const MATERIAL_COMPONENTS = [
     ProveedorComponent,
     ComprasComponent,
     DashboardComponent,
-    ListMenuItemsComponent,
     LoginModalComponent,
     RegistryModalComponent,
     LoginPageComponent,

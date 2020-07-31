@@ -24,13 +24,13 @@
                         {{ link.company.name }}
                     </mat-panel-description>
                     </mat-expansion-panel-header>
-                    <div style="text-align: center" >
-                    <button mat-button (click)="deleteWarehouse(tableSelect)">
-                        <mat-icon>delete_forever</mat-icon>
-                    </button>
-                    <button mat-button (click)="editWarehouse()">
-                        <mat-icon>edit</mat-icon>
-                    </button>
+                    <div style="text-align: right" >
+                        <span class="link-text separate-r text-primary-color" (click)="editWarehouse()" id="edit-span">
+                            Editar
+                        </span>
+                        <span class="link-text text-primary-color" (click)="deleteWarehouse()" id="delete-span">
+                            Eliminar
+                        </span>
                     </div>
                 </mat-expansion-panel>
             </mat-accordion>
