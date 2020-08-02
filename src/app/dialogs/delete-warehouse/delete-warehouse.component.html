@@ -1,48 +1,50 @@
 
-<div class="margin-1">
-    <mat-dialog-content class="mat-typography" >
-      
-        <h2 align="center"> El siguiente registro se eliminará: </h2>
+<section class="mat-typography">
+  <div class="margin-1">
+      <mat-dialog-content class="mat-typography" >
         
-        <mat-list>
-            <h3 mat-subheader>Código ERP</h3>
-            <mat-list-item >  
-              <h4 mat-line >{{recivedData.phone}}</h4>
-            </mat-list-item>
-            <mat-divider></mat-divider>
-    
-            <h3 mat-subheader>Descripción</h3>
-            <mat-list-item >
-              <h4 mat-line>{{recivedData.name}}</h4>
-            </mat-list-item>
-            <mat-divider></mat-divider>
-    
-            <h3 mat-subheader>Tipo de almacén</h3>
-            <mat-list-item >
-              <h4 mat-line>{{recivedData.website}}</h4>
-            </mat-list-item>
-            <mat-divider></mat-divider>
-    
-            <h3 mat-subheader>Ubicación</h3>
-            <mat-list-item >
-              <h4 mat-line>{{recivedData.username}}</h4>
-            </mat-list-item>
-            <mat-divider></mat-divider>
-    
-            <h3 mat-subheader>Clave de almacén</h3>
-            <mat-list-item >
-              <h4 mat-line>{{recivedData.id}}</h4>
-            </mat-list-item>
-            <mat-divider></mat-divider>
-        </mat-list>
-        
-      </mat-dialog-content>
-
-      <h3 class="mt-3" align="center" > ¿Deseas borrarlo definitivamente? </h3>
+          <h3 align="center"> El siguiente registro se eliminará: </h3>
+          
+          <mat-list>
+              <h3 mat-subheader>Código ERP</h3>
+              <mat-list-item >  
+                <h4 mat-line >{{recivedData.phone}}</h4>
+              </mat-list-item>
+              <mat-divider></mat-divider>
       
-      <mat-dialog-actions align="center" >
-        <button mat-flat-button color="primary" type="submit">Sí, eliminar</button>
-        <button mat-stroked-button mat-dialog-close>Cancelar</button>
-      </mat-dialog-actions>
-</div>
+              <h3 mat-subheader>Descripción</h3>
+              <mat-list-item >
+                <h4 mat-line>{{recivedData.name}}</h4>
+              </mat-list-item>
+              <mat-divider></mat-divider>
+      
+              <h3 mat-subheader>Tipo de almacén</h3>
+              <mat-list-item >
+                <h4 mat-line>{{recivedData.website}}</h4>
+              </mat-list-item>
+              <mat-divider></mat-divider>
+      
+              <h3 mat-subheader>Ubicación</h3>
+              <mat-list-item >
+                <h4 mat-line>{{recivedData.username}}</h4>
+              </mat-list-item>
+              <mat-divider></mat-divider>
+      
+              <h3 mat-subheader>Clave de almacén</h3>
+              <mat-list-item >
+                <h4 mat-line>{{recivedData.id}}</h4>
+              </mat-list-item>
+              <mat-divider></mat-divider>
+          </mat-list>
+          
+        </mat-dialog-content>
+  
+        <h3 class="mt-3" align="center" > ¿Deseas borrarlo definitivamente? </h3>
+        
+        <mat-dialog-actions align="center" >
+          <button mat-flat-button color="primary" type="submit">Sí, eliminar</button>
+          <button mat-stroked-button mat-dialog-close>Cancelar</button>
+        </mat-dialog-actions>
+  </div>
+</section>
   

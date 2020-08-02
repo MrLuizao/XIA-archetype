@@ -1,21 +1,29 @@
 
-<button mat-button slot="end" [matMenuTriggerFor]="menu">
-    Luis Vázquez &nbsp;&nbsp;
-  <mat-icon> more_vert </mat-icon>
+<button mat-icon-button aria-label="messages">
+  <mat-icon>home</mat-icon>
+</button>
+<button mat-icon-button aria-label="messages">
+  <mat-icon>today</mat-icon>
+</button>
+<button mat-icon-button aria-label="messages">
+  <mat-icon>mail</mat-icon>
 </button>
 
-<mat-menu #menu="matMenu">
-    <button mat-menu-item>
-      <mat-icon>perm_identity</mat-icon>
-      <span>Perfil</span>
-    </button>
-    <button mat-menu-item>
-      <mat-icon>color_lens</mat-icon>
-      <span>Tema</span>
-    </button>
-    <button mat-menu-item (click)="dialogConfirmClose()">
-        <mat-icon>login</mat-icon>
-        <span>Salir</span>
-    </button>
+  &nbsp;&nbsp;
 
-  </mat-menu>
+<button mat-mini-fab aria-label="login" [matMenuTriggerFor]="menu">
+  <mat-icon>perm_identity</mat-icon>
+</button>
+
+<mat-menu #menu="matMenu" >
+    <p class="card-profile-text">Luis Vázquez R.</p>
+    <a class="mb-3" mat-button routerLink=".">Mi perfil</a>
+
+    <div class="item-align-left">
+      <button mat-menu-item (click)="dialogConfirmClose()">
+        <span>Salir</span>
+        &nbsp;
+        <mat-icon>login</mat-icon>
+      </button>
+    </div>
+</mat-menu>

@@ -20,11 +20,15 @@
                 <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false" 
                 *ngFor="let link of listMenu | listSearch: filterList" (click)="viewTableById(link.id)" class="fill-size">
                     <mat-expansion-panel-header >
-                    <mat-panel-description>
-                        {{ link.company.name }}
-                    </mat-panel-description>
+                        <mat-panel-description>
+                            {{ link.company.name }}
+                        </mat-panel-description>
                     </mat-expansion-panel-header>
-                    <div style="text-align: right" >
+
+                    <div style="text-align: right;">
+                        <span class="link-text text-accent-color span-start-mobile" (click)="drawer.toggle()">
+                            Detalles
+                        </span>
                         <span class="link-text separate-r text-primary-color" (click)="editWarehouse()" id="edit-span">
                             Editar
                         </span>
@@ -38,11 +42,11 @@
         </mat-nav-list>
     </mat-drawer>
 
-    <mat-toolbar class="mat-elevation-z1" color="primary" style="height: 5rem;" class="web-only">
+    <mat-toolbar class="mat-elevation-z1" color="primary" style="height: 5rem;" >
 
-        <!-- <button mat-button style="margin-left: -1rem;" (click)="drawer.toggle()" >
+        <button mat-button style="margin-left: -1rem;" (click)="drawer.toggle()" class="mobile-only">
             <mat-icon>menu</mat-icon>
-        </button> -->
+        </button>
     
         <span style="margin-top: 1px;">Almacén</span>
 
@@ -54,13 +58,13 @@
             </button>
         </span>
         <span >
-            <button mat-button (click)="deleteWarehouse(tableSelect)" class="web-only">
+            <button mat-button (click)="deleteWarehouse(tableSelect)" >
                 <mat-icon>delete_forever</mat-icon>
             </button>
         </span>
     </mat-toolbar>
     
-    <mat-list class="warehouse-items" class="web-only" st>
+    <mat-list class="warehouse-items">
         <h3 mat-subheader>Código ERP</h3>
         <mat-list-item >
             <mat-icon mat-list-icon>qr_code</mat-icon>          
