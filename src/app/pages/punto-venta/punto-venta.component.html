@@ -1,0 +1,20 @@
+
+<app-nav-all-app></app-nav-all-app>
+
+
+
+<mat-drawer-container class="example-container" >
+
+    <mat-drawer #drawer class="example-sidenav" mode="side" opened  style="min-width: 30%;">
+        <!-- aqui va el componente de agregar elementos al carrito -->
+        <app-cart-list></app-cart-list>    
+
+    </mat-drawer>
+
+    <!-- aqui es el layer para el compoinente con la lista de elementos a la venta -->
+    <app-shop-list></app-shop-list>    
+    
+
+</mat-drawer-container>
+
+

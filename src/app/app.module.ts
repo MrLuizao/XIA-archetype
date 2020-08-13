@@ -56,6 +56,9 @@ import { EditWarehouseComponent } from './dialogs/edit-warehouse/edit-warehouse.
 import { ErrorResponseComponent } from './snack-alerts/error-response/error-response.component';
 import { InvalidSelectComponent } from './snack-alerts/invalid-select/invalid-select.component';
 import { CorrectResponseComponent } from './snack-alerts/correct-response/correct-response.component';
+import { PuntoVentaComponent } from './pages/punto-venta/punto-venta.component';
+import { ShopListComponent } from './Components/shop-list/shop-list.component';
+import { CartListComponent } from './Components/cart-list/cart-list.component';
 
 
 export const MATERIAL_COMPONENTS = [
@@ -107,7 +110,10 @@ export const MATERIAL_COMPONENTS = [
     EditWarehouseComponent,
     ErrorResponseComponent,
     InvalidSelectComponent,
-    CorrectResponseComponent
+    CorrectResponseComponent,
+    PuntoVentaComponent,
+    ShopListComponent,
+    CartListComponent
   ],
   imports: [
     BrowserModule,

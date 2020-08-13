@@ -1,0 +1,13 @@
+
+<span>Artículos en la lista: &nbsp; <strong>{{totalQuantity}}</strong></span>
+    <div *ngFor="let item of items" class="col-md-12">
+        <p>{{item.name}}</p>
+        <p>${{item.gini}}</p>
+        <button type="button" class="btn btn-danger" (click)="removeItem(item)" style="margin-bottom: 3rem;">
+        Quitar
+        </button>      
+    </div>
+<div class="card-header d-flex justify-content-between align-items-center">
+    <p>Precio Total:</p>
+    <p><strong> $ {{totalPrice}} </strong></p>
+</div>

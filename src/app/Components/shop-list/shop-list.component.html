@@ -1,0 +1,10 @@
+
+<div class="container" >        
+    <div class="box" *ngFor="let product of listProduct">
+        <div class="content">
+            <h5 class="card-title">{{product.name}}</h5>
+            <p><strong>Precio: ${{product.gini}}</strong></p>
+            <button type="button" class="btn btn-primary" (click)="addToBuy(product)">Agregar</button>
+        </div>
+    </div>
+</div>

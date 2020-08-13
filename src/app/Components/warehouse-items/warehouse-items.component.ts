@@ -87,7 +87,7 @@ export class WarehouseItemsComponent implements OnInit {
     })
   }
 
-  deleteWarehouse(){
+  deleteWarehouse(item){
 
     if (this.tableSelect.length == 0){
       this.snackService.invalidSnack();

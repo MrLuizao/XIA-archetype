@@ -10,7 +10,6 @@ import { MenuModel } from 'src/app/Models/menu.model';
 export class CardMenuDashboardComponent implements OnInit {
 
   menuItems: MenuModel[] = [];
-  // menuItems: any[] = [];
   filteredObject: any[] = [];
 
   constructor( private mockService: MockConsumeService ) { }
@@ -27,16 +26,6 @@ export class CardMenuDashboardComponent implements OnInit {
     .subscribe( (resp:any) => {
       this.menuItems = resp;
       console.log('DATA: ', this.menuItems);
-
-      // let dataMenu = this.menuItems;
-      // let filterObj =  dataMenu.map( object => {
-      //   return{
-      //     svg: object.image
-      //   }
-      // })
-      // this.filteredObject = filterObj
-      // console.log('nuevo valor de filteredObject', this.filteredObject);
-      
     });
 
   }
