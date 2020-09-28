@@ -20,7 +20,7 @@ export class ConsumeService {
        environment.URL_SERVER+
        environment.API+
        environment.VERSION+
-       environment.ENDPOINT_DIRECTORY,
+       environment.ENDPOINT,
 
        NEW_WAREHOUSE
     )
