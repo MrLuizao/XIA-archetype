@@ -1,9 +1,67 @@
 
-<mat-drawer-container class="example-container bgc-element" autosize >
-    <!-- <video autoplay muted loop id="myVideo">
+<div class="row"  class="example-container bgc-element">
+
+    <div class="col-sm-4" style="background-color: azure; width:auto; height: 100%; padding: 3rem;">       
+        <form   (ngSubmit)="submitLogin(dataForm)" 
+                #dataForm="ngForm">
+
+            <p>
+                <mat-form-field appearance="legacy" class="example-full-width" style="margin-top: 8rem; margin-bottom: 3rem;">
+                    <mat-label>Ingresa tu email</mat-label>
+
+                        <input  matInput 
+                                placeholder="Correo electrónico" 
+                                [formControl]="email" 
+                                name="email"
+                                [(ngModel)]="user.email"
+                                required>
+
+                        <mat-icon matSuffix>mail_outline</mat-icon>
+                        
+                    <mat-error *ngIf="email.invalid">{{getErrorMessage()}}</mat-error>
+                </mat-form-field>
+
+            </p>
+
+            <p>
+                <mat-form-field appearance="legacy" class="example-full-width"  style="margin-bottom: 3rem;">
+                    <mat-label>Ingresa tu password</mat-label>
+                        <input  matInput 
+                                [type]="hide ? 'password' : 'text'"
+                                name="password"
+                                [(ngModel)]="user.password"
+                                minlength="6"
+                                required>
+
+                    <button mat-icon-button matSuffix (click)="hide = !hide" [attr.aria-label]="'Hide password'" [attr.aria-pressed]="hide">
+                        <mat-icon matSuffix class="icon-xl">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+                    </button>
+
+                </mat-form-field>
+            </p>
+
+            <div>
+                <button mat-flat-button color="accent" type="submit" class="fill-size">
+                    Iniciar sesión
+                </button>
+            </div>
+
+        </form>
+    </div>
+
+    <div class="col-sm-8">
+        <div class="row">
+            
+        </div>
+    </div>
+
+</div>
+
+<!-- <mat-drawer-container class="example-container bgc-element" autosize >
+    <video autoplay muted loop id="myVideo">
         <source src="background_login.mp4" type="video/mp4">
         Your browser does not support HTML5 video.
-      </video> -->
+      </video>
 
     <div class="form-wraper" >
 
@@ -60,7 +118,7 @@
     </div>
 
 
-</mat-drawer-container>
+</mat-drawer-container> -->
 
 
 

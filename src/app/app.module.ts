@@ -44,7 +44,6 @@ import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { ToolsUserComponent } from './Components/tools-user/tools-user.component';
 import { ConfirmCloseComponent } from './dialogs/confirm-close/confirm-close.component';
 import { CardsHomeComponent } from './Components/cards-home/cards-home.component';
-import { TableUsersComponent } from './Components/table-users/table-users.component';
 import { CardMenuDashboardComponent } from './Components/card-menu-dashboard/card-menu-dashboard.component';
 import { NavBarDashboardComponent } from './Components/nav-bar-dashboard/nav-bar-dashboard.component';
 import { NavAllAppComponent } from './Components/nav-all-app/nav-all-app.component';
@@ -96,7 +95,6 @@ export const MATERIAL_COMPONENTS = [
     ToolsUserComponent,
     ConfirmCloseComponent,
     CardsHomeComponent,
-    TableUsersComponent,
     CardMenuDashboardComponent,
     NavBarDashboardComponent,
     NavAllAppComponent,
